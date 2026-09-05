@@ -25,6 +25,7 @@ export default async function AboutPage({
   setRequestLocale(locale);
 
   const t = await getTranslations("about");
+  const historyParagraphs = t.raw("history.paragraphs") as string[];
   const editorialParagraphs = t.raw("editorial.paragraphs") as string[];
   const pillars = t.raw("pillarsDetail.items") as { title: string; body: string }[];
 
@@ -35,6 +36,40 @@ export default async function AboutPage({
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
       />
+
+      <section className="bg-ivory-50 py-24 sm:py-28">
+        <Container className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-start">
+          <MotionReveal>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-bronze-600">
+              {t("history.kicker")}
+            </p>
+            <h2 className="font-serif text-5xl text-teal-800 sm:text-6xl">
+              {t("history.title")}
+            </h2>
+          </MotionReveal>
+          <div className="space-y-5">
+            {historyParagraphs.map((paragraph, i) => (
+              <MotionReveal key={i} delay={i * 0.05}>
+                <p className="text-balance text-lg leading-relaxed text-ink-700">{paragraph}</p>
+              </MotionReveal>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-bronze-50/60 py-16 sm:py-20">
+        <Container className="max-w-3xl text-center">
+          <MotionReveal>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-bronze-600">
+              {t("legacy.kicker")}
+            </p>
+            <h3 className="font-serif text-2xl text-ink-900 sm:text-3xl">{t("legacy.title")}</h3>
+            <p className="mx-auto mt-4 max-w-2xl text-balance leading-relaxed text-ink-500">
+              {t("legacy.body")}
+            </p>
+          </MotionReveal>
+        </Container>
+      </section>
 
       <section className="bg-ivory-50 py-24 sm:py-28">
         <Container className="max-w-3xl">

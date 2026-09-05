@@ -18,6 +18,7 @@
     "leadership": "Leadership",
     "news": "News",
     "gallery": "Gallery",
+    "resources": "Resources",
     "contact": "Contact",
     "menu": "Menu",
     "close": "Close",
@@ -110,6 +111,20 @@
       "title": "Our Story",
       "subtitle": "A Kimberley-based Islamic institute carrying Ta'leem, Social Welfare and Tableegh to communities across the Northern Cape and Free State."
     },
+    "history": {
+      "kicker": "Our History",
+      "title": "Since 1974",
+      "paragraphs": [
+        "Alhamdulillah, through the grace of Allah Ta'ala, Miftahuddin Islamic Institute has been in existence for over fifty years, since its inception in 1974. The Institute was established primarily for the assistance of poor and underprivileged people who ascribe to the Islamic faith, and secondarily for the needs of other underprivileged people wherever possible.",
+        "Assistance has been extended in many forms over the decades — distributing food parcels and clothing, slaughtering and distributing meat, running feeding schemes, facilitating religious education, offering moral guidance and counselling, arranging funerals, educating prisoners, seeing to the expenses of religious ceremonies such as marriages, and distributing money, food and clothing for the Eid festivals.",
+        "Each year, the Mini-Mina Qurbani Camp sees approximately 400 sheep, goats and cows slaughtered, with the meat distributed to Muslims and non-Muslims alike, while Ramadhaan brings Iftaar and Sehri to Miftahuddin's centres — and to the inmates of the prisons it serves."
+      ]
+    },
+    "legacy": {
+      "kicker": "A Legacy of Knowledge",
+      "title": "Ulama Raised, Communities Served",
+      "body": "Over the decades, close to forty Huffadh and thirty Ulama have qualified through Miftahuddin's efforts, alongside many Daa'ees, Aalimahs, Apas and Haafidhas. Alhamdulillah, they remain engaged in Deeni Khidmah — teaching in Madaaris or leading Salaah in Masaajid across the network."
+    },
     "editorial": {
       "kicker": "From Our Annual Report",
       "title": "Why Our Work Matters",
@@ -197,7 +212,17 @@
     "network": {
       "kicker": "Our Network",
       "title": "Kimberley, the Northern Cape & the Free State",
-      "body": "Miftahuddin's Makaatib, Masaajid and Musallahs span Kimberley's townships and reach into small towns including Windsorton, Prieska, Kathu, Douglas, Griekwastad, Hopetown, Britstown, Victoria West, Olifantshoek and Upington in the Northern Cape, and Koffiefontein, Jagersfontein, Boshof and Dealesville in the Free State."
+      "body": "Miftahuddin's Makaatib, Masaajid and Musallahs span Kimberley's townships and reach into small towns including Windsorton, Prieska, Kathu, Douglas, Griekwastad, Hopetown, Britstown, Victoria West, Olifantshoek and Upington in the Northern Cape, and Koffiefontein, Jagersfontein, Boshof and Dealesville in the Free State.",
+      "growth": "Earlier reports identified new Masaajid in Dealesville and Boshof as urgent, unmet needs. Alhamdulillah, both have since been completed — a small but telling sign of Miftahuddin's steady expansion despite the vast distances involved."
+    },
+    "legacy": {
+      "kicker": "Over Five Decades",
+      "title": "A Legacy Since 1974",
+      "items": [
+        { "value": 50, "prefix": "", "suffix": "+", "label": "Years of Service", "description": "Serving the community since 1974" },
+        { "value": 40, "prefix": "~", "suffix": "", "label": "Huffadh Produced", "description": "Now teaching in Madaaris across the network" },
+        { "value": 30, "prefix": "~", "suffix": "", "label": "Ulama Qualified", "description": "Now leading Salaah in Masaajid across the network" }
+      ]
     },
     "milestones": {
       "kicker": "Recent Milestones",
@@ -307,6 +332,34 @@
       "body": "This gallery will grow as further photographs are supplied by the Institute."
     }
   },
+  "resources": {
+    "hero": {
+      "kicker": "Resources",
+      "title": "Annual Reports",
+      "subtitle": "Read Miftahuddin's published annual reports in full — in the Institute's own words, on where and how your contributions have been used."
+    },
+    "reports": [
+      {
+        "title": "Annual Report 2024",
+        "period": "",
+        "description": "Covers recent building projects across Kimberley, the Northern Cape and the Free State, the Institute's Makaatib and Masaajid network, staff composition and community welfare programmes.",
+        "fileType": "PDF",
+        "fileSize": "8.6 MB",
+        "fileLabel": "Download PDF",
+        "href": "/downloads/miftahuddin-annual-report-2024.pdf"
+      },
+      {
+        "title": "Annual Report 2023",
+        "period": "1445 AH",
+        "description": "Details the Institute's history since 1974, its work and outreach across Kimberley and the Northern Cape, a full breakdown of monthly expenses, and current building projects.",
+        "fileType": "PPTX",
+        "fileSize": "0.8 MB",
+        "fileLabel": "Download Presentation",
+        "href": "/downloads/miftahuddin-annual-report-2023.pptx"
+      }
+    ],
+    "note": "Reports are shared exactly as published by the Institute, so that every contributor can see for themselves where and how their contributions were used."
+  },
   "contact": {
     "hero": {
       "kicker": "Contact",
@@ -325,6 +378,39 @@
       "mobilePhone": "Mobile: 082 815 6786",
       "emailLabel": "Email",
       "email": "miftahuddininstitute@gmail.com"
+    },
+    "giving": {
+      "kicker": "Zakaat & Donations",
+      "title": "Ways to Give",
+      "intro": "Miftahuddin relies entirely on the generosity of the Muslim public. Lillah and Zakaat may be paid directly into the accounts below.",
+      "accounts": [
+        {
+          "label": "Zakaat Account",
+          "bank": "First National Bank (FNB)",
+          "accountNumber": "543 600 313 46",
+          "branchCode": "Branch code: 231002",
+          "note": "Cash deposits to this account do not attract a cash deposit fee."
+        },
+        {
+          "label": "Zakaat Account",
+          "bank": "Standard Bank",
+          "accountNumber": "040 109 879",
+          "branchCode": "",
+          "note": ""
+        },
+        {
+          "label": "Lillah Account",
+          "bank": "First National Bank (FNB)",
+          "accountNumber": "526 339 258 66",
+          "branchCode": "Branch code: 231002",
+          "note": "Cash deposits to this account attract a 1% cash deposit fee."
+        }
+      ],
+      "reference": "Please use your name and cell phone number as the payment reference.",
+      "certificate": "If you require a Section 18A tax certificate, please contact the Institute before making payment so that the necessary arrangements can be made.",
+      "proofLabel": "Proof of Payment",
+      "proofEmail": "Email your proof of payment to",
+      "proofWhatsapp": "or WhatsApp it to"
     },
     "map": {
       "title": "Find Us"

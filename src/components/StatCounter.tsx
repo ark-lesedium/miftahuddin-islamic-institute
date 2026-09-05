@@ -5,10 +5,12 @@ import { useInView, useReducedMotion } from "framer-motion";
 
 export function StatCounter({
   value,
+  prefix = "",
   suffix = "",
   duration = 1.6,
 }: {
   value: number;
+  prefix?: string;
   suffix?: string;
   duration?: number;
 }) {
@@ -39,6 +41,7 @@ export function StatCounter({
 
   return (
     <span ref={ref}>
+      {prefix}
       {display.toLocaleString()}
       {suffix}
     </span>

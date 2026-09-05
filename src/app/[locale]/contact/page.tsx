@@ -3,7 +3,8 @@ import { MapPin, Phone, Mail } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Container } from "@/components/Container";
 import { PageHero } from "@/components/PageHero";
-import { MotionReveal } from "@/components/MotionReveal";
+import { SectionHeading } from "@/components/SectionHeading";
+import { MotionReveal, MotionStagger } from "@/components/MotionReveal";
 import { ContactForm } from "@/components/ContactForm";
 
 export async function generateMetadata({
@@ -26,6 +27,13 @@ export default async function ContactPage({
 
   const t = await getTranslations("contact");
   const addressLines = t.raw("details.addressLines") as string[];
+  const accounts = t.raw("giving.accounts") as {
+    label: string;
+    bank: string;
+    accountNumber: string;
+    branchCode: string;
+    note: string;
+  }[];
 
   return (
     <>
@@ -130,6 +138,73 @@ export default async function ContactPage({
           >
             <h2 className="mb-6 font-serif text-2xl text-ink-900">{t("form.title")}</h2>
             <ContactForm />
+          </MotionReveal>
+        </Container>
+      </section>
+
+      <section className="bg-bronze-50/60 py-24 sm:py-28">
+        <Container className="max-w-4xl">
+          <SectionHeading
+            align="center"
+            kicker={t("giving.kicker")}
+            title={t("giving.title")}
+            subtitle={t("giving.intro")}
+            className="mx-auto mb-14"
+          />
+
+          <MotionStagger className="grid gap-5 sm:grid-cols-3">
+            {accounts.map((account, i) => (
+              <MotionReveal
+                key={`${account.label}-${i}`}
+                className="rounded-2xl border border-bronze-200 bg-ivory-50 p-6"
+              >
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-bronze-600">
+                  {account.label}
+                </p>
+                <p className="mt-2 font-serif text-lg text-ink-900">{account.bank}</p>
+                <p dir="ltr" className="mt-3 text-end text-xl font-semibold tracking-wide text-teal-800 sm:text-start">
+                  {account.accountNumber}
+                </p>
+                {account.branchCode ? (
+                  <p className="mt-1 text-sm text-ink-500">{account.branchCode}</p>
+                ) : null}
+                {account.note ? (
+                  <p className="mt-3 text-xs leading-relaxed text-ink-500">{account.note}</p>
+                ) : null}
+              </MotionReveal>
+            ))}
+          </MotionStagger>
+
+          <MotionReveal className="mx-auto mt-10 max-w-2xl space-y-2 text-center text-sm text-ink-500">
+            <p>{t("giving.reference")}</p>
+            <p>{t("giving.certificate")}</p>
+          </MotionReveal>
+
+          <MotionReveal className="mt-8 rounded-2xl border border-bronze-200 bg-ivory-50 px-6 py-6 text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-bronze-600">
+              {t("giving.proofLabel")}
+            </p>
+            <p className="mx-auto mt-2 max-w-xl text-balance leading-relaxed text-ink-700">
+              {t("giving.proofEmail")}{" "}
+              <a
+                dir="ltr"
+                href={`mailto:${t("details.email")}`}
+                className="font-semibold text-teal-700 hover:text-teal-800"
+              >
+                {t("details.email")}
+              </a>{" "}
+              {t("giving.proofWhatsapp")}{" "}
+              <a
+                dir="ltr"
+                href="https://wa.me/27828156786"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-teal-700 hover:text-teal-800"
+              >
+                082 815 6786
+              </a>
+              .
+            </p>
           </MotionReveal>
         </Container>
       </section>

@@ -34,6 +34,13 @@ export default async function ImpactPage({
     label: string;
     description: string;
   }[];
+  const legacyItems = t.raw("legacy.items") as {
+    value: number;
+    prefix: string;
+    suffix: string;
+    label: string;
+    description: string;
+  }[];
   const milestones = t.raw("milestones.items") as TimelineItem[];
 
   return (
@@ -71,7 +78,36 @@ export default async function ImpactPage({
             <p className="mx-auto mt-5 max-w-2xl text-balance text-lg leading-relaxed text-ink-500">
               {t("network.body")}
             </p>
+            <p className="mx-auto mt-4 max-w-2xl text-balance leading-relaxed text-ink-500">
+              {t("network.growth")}
+            </p>
           </MotionReveal>
+        </Container>
+      </section>
+
+      <section className="bg-ink-900 pattern-geometric-light py-20 sm:py-24">
+        <Container>
+          <SectionHeading
+            align="center"
+            tone="light"
+            kicker={t("legacy.kicker")}
+            title={t("legacy.title")}
+            className="mx-auto mb-12"
+          />
+          <MotionStagger className="grid gap-6 sm:grid-cols-3">
+            {legacyItems.map((item) => (
+              <MotionReveal
+                key={item.label}
+                className="rounded-2xl border border-ivory-50/10 bg-ivory-50/5 p-6 text-center sm:p-8"
+              >
+                <p className="font-serif text-4xl text-bronze-300 sm:text-5xl">
+                  <StatCounter value={item.value} prefix={item.prefix} suffix={item.suffix} />
+                </p>
+                <p className="mt-2 text-sm font-semibold text-ivory-50">{item.label}</p>
+                <p className="mt-1 text-xs leading-relaxed text-ivory-300">{item.description}</p>
+              </MotionReveal>
+            ))}
+          </MotionStagger>
         </Container>
       </section>
 

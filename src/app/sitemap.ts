@@ -14,6 +14,7 @@ const PATHS = [
   "leadership",
   "news",
   "gallery",
+  "resources",
   "contact",
 ];
 
