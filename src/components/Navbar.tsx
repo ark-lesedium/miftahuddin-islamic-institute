@@ -9,6 +9,7 @@ import { NAV_LINKS } from "./nav-links";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { MobileMenu } from "./MobileMenu";
 import { cn } from "@/lib/utils";
+import { assetPath } from "@/lib/asset-path";
 
 export function Navbar() {
   const t = useTranslations();
@@ -51,7 +52,7 @@ export function Navbar() {
           aria-label={t("brand.nameFull")}
         >
           <Image
-            src="/images/brand/logo-mark.png"
+            src={assetPath("/images/brand/logo-mark.png")}
             alt=""
             width={40}
             height={41}

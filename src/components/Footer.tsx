@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { Container } from "./Container";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { NAV_LINKS } from "./nav-links";
+import { assetPath } from "@/lib/asset-path";
 
 export function Footer() {
   const t = useTranslations();
@@ -18,7 +19,7 @@ export function Footer() {
           <div className="max-w-sm">
             <Link href="/" className="mb-4 flex items-center gap-3">
               <Image
-                src="/images/brand/logo-mark.png"
+                src={assetPath("/images/brand/logo-mark.png")}
                 alt=""
                 width={44}
                 height={45}

@@ -11,6 +11,7 @@ import { IslamicDivider } from "@/components/IslamicDivider";
 import { StatCounter } from "@/components/StatCounter";
 import { CTA } from "@/components/CTA";
 import { EmptyState } from "@/components/EmptyState";
+import { assetPath } from "@/lib/asset-path";
 
 export async function generateMetadata({
   params,
@@ -54,7 +55,7 @@ export default async function HomePage({
         <Container className="relative flex min-h-[86vh] flex-col items-center justify-center gap-10 py-28 text-center sm:min-h-[92vh]">
           <MotionReveal className="flex flex-col items-center">
             <Image
-              src="/images/brand/logo-mark.png"
+              src={assetPath("/images/brand/logo-mark.png")}
               alt=""
               width={120}
               height={123}
@@ -162,7 +163,7 @@ export default async function HomePage({
           </MotionReveal>
           <MotionReveal delay={0.1} className="relative aspect-[4/5] overflow-hidden rounded-3xl">
             <Image
-              src="/images/gallery/galeshewe-minaret.jpg"
+              src={assetPath("/images/gallery/galeshewe-minaret.jpg")}
               alt=""
               fill
               sizes="(min-width: 1024px) 40vw, 90vw"
@@ -212,7 +213,7 @@ export default async function HomePage({
             className="relative order-2 aspect-[4/5] overflow-hidden rounded-3xl lg:order-1"
           >
             <Image
-              src="/images/gallery/britstown-interior.jpg"
+              src={assetPath("/images/gallery/britstown-interior.jpg")}
               alt=""
               fill
               sizes="(min-width: 1024px) 40vw, 90vw"

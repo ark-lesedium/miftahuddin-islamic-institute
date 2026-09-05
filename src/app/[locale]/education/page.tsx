@@ -7,6 +7,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { MotionReveal } from "@/components/MotionReveal";
 import { PageHero } from "@/components/PageHero";
 import { CTA } from "@/components/CTA";
+import { assetPath } from "@/lib/asset-path";
 
 export async function generateMetadata({
   params,
@@ -51,7 +52,7 @@ export default async function EducationPage({
             className="relative aspect-[4/5] overflow-hidden rounded-3xl lg:sticky lg:top-28"
           >
             <Image
-              src="/images/gallery/minaret-construction.jpg"
+              src={assetPath("/images/gallery/minaret-construction.jpg")}
               alt=""
               fill
               sizes="(min-width: 1024px) 35vw, 90vw"
