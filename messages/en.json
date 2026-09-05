@@ -1,0 +1,359 @@
+{
+  "meta": {
+    "siteName": "Miftahuddin Islamic Institute",
+    "titleTemplate": "%s | Miftahuddin Islamic Institute",
+    "defaultDescription": "Miftahuddin Islamic Institute is a Kimberley-based Islamic organisation dedicated to Ta'leem (education), social welfare and Tableegh across the Northern Cape and Free State, South Africa."
+  },
+  "brand": {
+    "name": "Miftahuddin",
+    "nameFull": "Miftahuddin Islamic Institute",
+    "nameArabic": "المعهد الاسلامي مفتاح الدين",
+    "tagline": "Ta'leem · Social Welfare · Tableegh"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "education": "Education",
+    "impact": "Impact",
+    "leadership": "Leadership",
+    "news": "News",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Language"
+  },
+  "common": {
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "exploreEducation": "Explore Education",
+    "getInTouch": "Get in Touch",
+    "ourStory": "Our Story",
+    "backToTop": "Back to top",
+    "comingSoon": "Coming Soon",
+    "placeholderNote": "This section is structured to receive new content as it is confirmed by the Institute.",
+    "allRightsReserved": "All rights reserved."
+  },
+  "home": {
+    "hero": {
+      "kicker": "Ta'leem · Social Welfare · Tableegh",
+      "title": "Miftahuddin Islamic Institute",
+      "headline": "A Key to Faith, Knowledge and Service",
+      "subtitle": "Rooted in Kimberley, Miftahuddin carries the light of Islamic education, compassionate welfare and heartfelt da'wah across the Northern Cape, the Free State and beyond.",
+      "ctaPrimary": "Discover Our Work",
+      "ctaSecondary": "Get in Touch",
+      "scrollHint": "Scroll to explore"
+    },
+    "intro": {
+      "kicker": "Who We Are",
+      "title": "An Institute Built on Three Pillars",
+      "body": "Miftahuddin Islamic Institute is a Kimberley-based Islamic organisation whose name — meaning \"Key of the Deen\" — reflects its mission: to unlock knowledge, compassion and faith for the communities it serves. Through a growing network of Makaatib, Masaajid and welfare programmes reaching across the Northern Cape and into the Free State, Miftahuddin exists to preserve Islamic identity, uplift the vulnerable and strengthen the bonds of community."
+    },
+    "pillars": {
+      "kicker": "Our Foundation",
+      "title": "Ta'leem, Social Welfare & Tableegh",
+      "items": [
+        {
+          "title": "Ta'leem",
+          "subtitle": "Education",
+          "body": "A network of Makaatib safeguards the Islamic identity of children from their earliest years, connecting them to the Deen through structured Qur'anic and Islamic education."
+        },
+        {
+          "title": "Social Welfare",
+          "subtitle": "Khidmah",
+          "body": "From feeding schemes to bursaries and prison outreach, Miftahuddin's welfare work is an expression of Imaan — rooted in Zakat, compassion and justice for those in need."
+        },
+        {
+          "title": "Tableegh",
+          "subtitle": "Outreach",
+          "body": "Miftahuddin strengthens Ukhuwwah within the community and shares the message of Islam beyond it, including through the Darul 'Ajaaib Islamic Museum."
+        }
+      ]
+    },
+    "journeyPreview": {
+      "kicker": "Educational Journey",
+      "title": "Nurturing Faith Through Every Stage of Learning",
+      "body": "From the Makaatib of Kimberley to Madrasahs scattered across small towns throughout the Northern Cape and Free State, Miftahuddin's educational role reaches children, adult reverts and prison inmates alike.",
+      "cta": "Explore Our Educational Role"
+    },
+    "impactPreview": {
+      "kicker": "Impact & Achievements",
+      "title": "A Growing Presence Across the Northern Cape",
+      "cta": "View Our Full Impact"
+    },
+    "communityPreview": {
+      "kicker": "Community",
+      "title": "Care That Reaches Every Corner",
+      "body": "Ramadhaan and Qurbani feeding schemes, bursaries for students, hostels for the vulnerable, assistance to orphans and travellers, and a dedicated Prison Board — Miftahuddin's welfare work touches lives well beyond the Masjid.",
+      "cta": "See Our Community Work"
+    },
+    "newsPreview": {
+      "kicker": "News & Updates",
+      "title": "From the Institute",
+      "cta": "View All Updates"
+    },
+    "cta": {
+      "title": "Join Us in This Noble Cause",
+      "body": "Whether through knowledge, service or support, there are many ways to walk alongside Miftahuddin Islamic Institute in its mission.",
+      "ctaPrimary": "Contact Us",
+      "ctaSecondary": "Learn About Our Work"
+    },
+    "contactPreview": {
+      "kicker": "Visit or Reach Us",
+      "title": "We Would Love to Hear From You"
+    }
+  },
+  "about": {
+    "hero": {
+      "kicker": "About Miftahuddin",
+      "title": "Our Story",
+      "subtitle": "A Kimberley-based Islamic institute carrying Ta'leem, Social Welfare and Tableegh to communities across the Northern Cape and Free State."
+    },
+    "editorial": {
+      "kicker": "From Our Annual Report",
+      "title": "Why Our Work Matters",
+      "paragraphs": [
+        "In today's world, where the gap between the rich and poor continues to grow, social welfare work is more important than ever. Miftahuddin Islamic Institute, built on values of compassion, justice and community support, is dedicated to fighting poverty and helping those in need.",
+        "Social welfare is all about helping people who are struggling to meet their basic needs — food, clothing, education and shelter. For us, these actions are more than charity; they are part of our Imaan and our commitment to Islamic teaching. Zakat, one of the Five Pillars of Islam, requires Muslims to give a portion of their wealth to those less fortunate — not only to purify wealth, but to ensure the community thrives.",
+        "Poverty affects millions worldwide, leading to a lack of essentials like food, shelter and education. Our goal is to break this cycle by providing financial help and education to those in need, empowering people to improve their lives and contribute to society."
+      ]
+    },
+    "pillarsDetail": {
+      "kicker": "Our Foundation",
+      "title": "Ta'leem, Social Welfare & Tableegh",
+      "items": [
+        {
+          "title": "Ta'leem — Education",
+          "body": "The Makaatib system is the backbone of our educational efforts. Besides empowering children through education, it serves as their primary connection to the Deen of Islam — essential to the preservation of their Imaan and Islamic identity. As the Prophet Muhammad (peace be upon him) said, \"Seeking knowledge is an obligation upon every Muslim.\""
+        },
+        {
+          "title": "Social Welfare — Khidmah",
+          "body": "Our welfare work strengthens community bonds by bringing people together through feeding schemes, bursaries, hostels and assistance to the poor, orphans and travellers. The Prophet Muhammad (peace be upon him) said, \"The best of people are those who are most beneficial to others.\""
+        },
+        {
+          "title": "Tableegh — Outreach & Ukhuwwah",
+          "body": "By encouraging mutual support and collective action, Miftahuddin fosters Ukhuwwah in line with the Qur'an: \"The believers are but brothers, so make settlement between your brothers. And fear Allah that you may receive mercy.\" (49:10)"
+        }
+      ]
+    },
+    "quote": {
+      "arabic": "من لم يشكر الناس لم يشكر الله",
+      "translation": "\"He who is not thankful to man cannot be thankful to Allah Ta'ala.\"",
+      "attribution": "Rasulullah ﷺ"
+    },
+    "leadershipNote": {
+      "kicker": "A Word From Our Leadership",
+      "body": "\"This report was prepared for your information, so that you may know where and how your contributions were utilised, and thus assess your investment for the Aakhirah. May Allah Ta'ala accept your contributions, and grant you manifold returns in this life and the Hereafter.\"",
+      "attribution": "Moulana M.E. Jeena"
+    },
+    "values": {
+      "kicker": "What Guides Us",
+      "title": "Our Educational Philosophy",
+      "body": "Miftahuddin holds that seeking knowledge is an obligation upon every Muslim, and that the preservation of Islamic identity begins in childhood. Through the Makaatib system, feeding schemes and community welfare, education and compassion are treated as inseparable — each strengthening the other in service of a fair and God-conscious society."
+    }
+  },
+  "education": {
+    "hero": {
+      "kicker": "Education at Miftahuddin",
+      "title": "Ta'leem: Our Educational Role",
+      "subtitle": "Structured Islamic education that safeguards Imaan and identity, from early childhood through to advanced Islamic scholarship."
+    },
+    "intro": {
+      "title": "The Makaatib System",
+      "paragraphs": [
+        "At the heart of Miftahuddin's educational mission is the Makaatib system — a network of Islamic schools that instils Qur'anic literacy and Islamic character in children from their earliest years. Besides empowering children through education, the Makaatib serve as their primary connection to the Deen of Islam, essential to the preservation of their Imaan and Islamic identity.",
+        "This network extends well beyond Kimberley, reaching small towns across the vast Northern Cape and into the Free State — including dedicated provision for a Hifz class, a girls' Madrasah with boarding, and even Madrasah classes held within two correctional facilities in Kimberley.",
+        "Seeking knowledge is highly valued in Islam. The Prophet Muhammad (peace be upon him) said, \"Seeking knowledge is an obligation upon every Muslim.\" Promoting education in this spirit helps fulfil that duty and empowers our community."
+      ]
+    },
+    "reach": {
+      "title": "A Network Across Two Provinces",
+      "body": "Alhamdulillah, effort in the vast Northern Cape is ongoing. The Northern Cape alone makes up approximately 30% of the total area of South Africa, meaning travel between our Makaatib and Masaajid is fairly challenging — yet much progress continues to be made each year."
+    },
+    "beyondMakaatib": {
+      "title": "Beyond the Makaatib",
+      "body": "Miftahuddin also sponsors students studying in various local Madrasahs — assisting with travel, clothing and meals — as well as students pursuing advanced Islamic scholarship in Darul Ulooms and other institutes of learning. Aid has also been extended to underprivileged students pursuing a secular course of their choice, and feeding schemes ensure that no child attending our Maktab goes hungry."
+    },
+    "future": {
+      "kicker": "Programmes",
+      "title": "Individual Programmes — Coming Soon",
+      "body": "Miftahuddin's specific programme offerings — including curricula, entry requirements, schedules, duration and how to apply — will be published here once officially confirmed. This section has been structured so that each future programme can receive its own dedicated page.",
+      "placeholderLabel": "Programme details to be announced"
+    }
+  },
+  "impact": {
+    "hero": {
+      "kicker": "Impact & Achievements",
+      "title": "Our Reach, in Numbers",
+      "subtitle": "Verified figures from Miftahuddin's Annual Report, reflecting years of quiet, sustained work across the Northern Cape and Free State."
+    },
+    "stats": [
+      { "value": 22, "suffix": "", "label": "Makaatib", "description": "Islamic schools across Kimberley and the Northern Cape" },
+      { "value": 23, "suffix": "", "label": "Masaajid & Musallahs", "description": "16 Masaajid and 7 Salaah Khanas serving two provinces" },
+      { "value": 51, "suffix": "", "label": "Team Members", "description": "Aalims, Aalimas and dedicated support staff" },
+      { "value": 3000, "suffix": "+", "label": "Fed Each Eidul-Adha", "description": "Through the Qurbani feeding scheme's Mini-Mina camp" }
+    ],
+    "network": {
+      "kicker": "Our Network",
+      "title": "Kimberley, the Northern Cape & the Free State",
+      "body": "Miftahuddin's Makaatib, Masaajid and Musallahs span Kimberley's townships and reach into small towns including Windsorton, Prieska, Kathu, Douglas, Griekwastad, Hopetown, Britstown, Victoria West, Olifantshoek and Upington in the Northern Cape, and Koffiefontein, Jagersfontein, Boshof and Dealesville in the Free State."
+    },
+    "milestones": {
+      "kicker": "Recent Milestones",
+      "title": "Building Projects, 2023–2025",
+      "items": [
+        {
+          "title": "Masjid Bibi Aa'ishah, Galeshewe",
+          "period": "Opened November 2023",
+          "body": "The first Masjid in the township of Galeshewe, Kimberley, complete with minaret. The old Salaah Khana is now used permanently for the Madrassah."
+        },
+        {
+          "title": "Masjid Sa'eed bin Zayd, Britstown",
+          "period": "Opened late 2023",
+          "body": "A former church on the N12 to Cape Town, 225km from Kimberley, purchased and converted into a beautiful Masjid."
+        },
+        {
+          "title": "Masjid Muhammad Mustafa ﷺ, Koffiefontein",
+          "period": "Opened February 2024",
+          "body": "A Masjid and Madrassah in this Free State mining town, 100km from Kimberley, with excellent Musallee attendance."
+        },
+        {
+          "title": "Musallah Mu'az bin Jabal, Ritchie",
+          "period": "Officially opened February 2024",
+          "body": "A donated container Musallah, extensively renovated with a new wudhu khana, kitchen, toilets and Imam's house, 50km from Kimberley."
+        },
+        {
+          "title": "Boshof Town Salaah Khana",
+          "period": "Opened April 2024",
+          "body": "The second Salaah Khana in Boshof, situated in the centre of town, Free State."
+        },
+        {
+          "title": "Imam's House, Masjid Hamza, Victoria West",
+          "period": "Completed February 2025",
+          "body": "Purpose-built quarters for the resident Imam, 350km from Kimberley, following the Masjid's completion in November 2021."
+        },
+        {
+          "title": "Dealesville Masjid",
+          "period": "Nearing completion",
+          "body": "Situated 108km from Kimberley on the old Bloemfontein road, this project is in its final stages, alhamdulillah."
+        }
+      ]
+    },
+    "renovations": {
+      "title": "Renovation & Maintenance",
+      "body": "Alongside new construction, major renovation work has taken place at Beaconsfield (Wudhu Khana and Imam's House), Windsorton (borehole water distribution and Imam's House) and Musallah Abu Bakr in Seocheoreng Street, Galeshewe (complete renovation including a new Mehraab, Imam's quarters and Musallahs). Funds remain continuously needed for the upkeep of every Masjid and Madrasah in the network."
+    }
+  },
+  "leadership": {
+    "hero": {
+      "kicker": "Leadership",
+      "title": "Guided by Sincerity and Service",
+      "subtitle": "Miftahuddin's work is carried out by a dedicated team of Aalims, Aalimas and support staff serving communities across the Northern Cape and Free State."
+    },
+    "message": {
+      "kicker": "A Message From Our Leadership",
+      "quote": "This newsletter and annual report was prepared for your information, so that you may know where and how your contributions were utilised, and you may thus assess your investment for the Aakhirah. We cannot be grateful enough to all those who gave moral, physical, monetary and any other form of support to the institution for the sake of Allah. We continually make du'a that Allah Ta'ala reward them abundantly in Dunya and Aakhirah with all goodness and well-being.",
+      "attribution": "Moulana M.E. Jeena"
+    },
+    "team": {
+      "kicker": "Our Team",
+      "title": "Alhamdulillah, the Miftahuddin Team Comprises",
+      "roles": [
+        { "count": 18, "label": "Aalims / Imams" },
+        { "count": 17, "label": "Aalimas" },
+        { "count": 6, "label": "Domestic Workers" },
+        { "count": 3, "label": "Prison Spiritual Care Workers" },
+        { "count": 2, "label": "Caretakers / Assistants" },
+        { "count": 2, "label": "Gardeners" },
+        { "count": 1, "label": "Cook" },
+        { "count": 1, "label": "Matron" },
+        { "count": 1, "label": "Office Assistant" }
+      ]
+    },
+    "profiles": {
+      "kicker": "Leadership Profiles",
+      "title": "Individual Profiles — Coming Soon",
+      "body": "Detailed profiles for Miftahuddin's Aalims, Aalimas and senior staff will be added here as they are confirmed by the Institute."
+    }
+  },
+  "news": {
+    "hero": {
+      "kicker": "News & Updates",
+      "title": "From the Institute",
+      "subtitle": "Announcements, project updates and stories from across the Miftahuddin network."
+    },
+    "empty": {
+      "title": "Updates Are Being Prepared",
+      "body": "This section is structured and ready to publish news as it is released by the Institute — new Masaajid, Madrasah developments, welfare initiatives and community events. Please check back soon.",
+      "cta": "Contact Us for the Latest News"
+    }
+  },
+  "gallery": {
+    "hero": {
+      "kicker": "Gallery",
+      "title": "A Living Record of Our Work",
+      "subtitle": "Photographs from Miftahuddin's Masaajid, Madaaris and building projects across Kimberley, the Northern Cape and the Free State."
+    },
+    "items": [
+      { "id": "minaret-construction", "title": "Minaret Under Construction", "location": "Kimberley, Northern Cape" },
+      { "id": "galeshewe-minaret", "title": "Masjid Bibi Aa'ishah", "location": "Galeshewe, Kimberley" },
+      { "id": "koffiefontein-exterior", "title": "Masjid Muhammad Mustafa ﷺ", "location": "Koffiefontein, Free State" },
+      { "id": "britstown-interior", "title": "Prayer Hall, Masjid Sa'eed bin Zayd", "location": "Britstown, Northern Cape" },
+      { "id": "britstown-exterior", "title": "A Former Church, Reborn as a Masjid", "location": "Britstown, Northern Cape" }
+    ],
+    "empty": {
+      "title": "More Photographs Coming Soon",
+      "body": "This gallery will grow as further photographs are supplied by the Institute."
+    }
+  },
+  "contact": {
+    "hero": {
+      "kicker": "Contact",
+      "title": "Get in Touch",
+      "subtitle": "We would love to hear from you — whether you have a question, wish to contribute, or would like to visit."
+    },
+    "details": {
+      "title": "Contact Details",
+      "addressLabel": "Address",
+      "addressLines": ["12 Nargis Crescent, Moghul Park", "Kimberley, 8300", "South Africa"],
+      "postalLabel": "Postal Address",
+      "postal": "P.O. Box 542, Kimberley, 8300",
+      "phoneLabel": "Telephone",
+      "officePhone": "Office: (053) 832 1164",
+      "homePhone": "Home: (053) 832 7555",
+      "mobilePhone": "Mobile: 082 815 6786",
+      "emailLabel": "Email",
+      "email": "miftahuddininstitute@gmail.com"
+    },
+    "map": {
+      "title": "Find Us"
+    },
+    "form": {
+      "title": "Send a Message",
+      "note": "This form opens a pre-filled email in your mail application — Miftahuddin does not yet operate an online submission system.",
+      "nameLabel": "Full Name",
+      "emailLabel": "Email Address",
+      "subjectLabel": "Subject",
+      "messageLabel": "Message",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "you@example.com",
+      "subjectPlaceholder": "How can we help?",
+      "messagePlaceholder": "Write your message here...",
+      "submit": "Send Message",
+      "required": "This field is required"
+    }
+  },
+  "footer": {
+    "description": "A Kimberley-based Islamic institute dedicated to Ta'leem, Social Welfare and Tableegh across the Northern Cape and Free State.",
+    "navTitle": "Navigate",
+    "contactTitle": "Contact",
+    "languageTitle": "Language",
+    "copyright": "Miftahuddin Islamic Institute. All rights reserved."
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "body": "The page you are looking for does not exist or may have moved.",
+    "cta": "Return Home"
+  }
+}

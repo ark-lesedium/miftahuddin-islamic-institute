@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Source materials supplied for content extraction (raw Annual Report, original
+# logo file) — not needed to build or run the site, and the Annual Report
+# contains internal/financial correspondence not meant for a public repo.
+# Processed assets actually used by the site live under public/images/.
+/Documents/
+/logo.jpeg

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Miftahuddin Islamic Institute</title>
+    <meta http-equiv="refresh" content="0; url=./en/" />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background: #fbf8f2;
+        color: #1e1b16;
+        font-family: Georgia, "Iowan Old Style", serif;
+      }
+      .wrap {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        text-align: center;
+        padding: 1.5rem;
+      }
+      img {
+        width: 64px;
+        height: auto;
+        opacity: 0.92;
+      }
+      p {
+        font-size: 0.95rem;
+        color: #635c4c;
+        letter-spacing: 0.02em;
+      }
+      a {
+        color: #235b4b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <img src="./images/brand/logo-mark.png" alt="Miftahuddin Islamic Institute" />
+      <p>Miftahuddin Islamic Institute</p>
+      <noscript>
+        <p><a href="./en/">Continue to the site in English</a> &nbsp;|&nbsp; <a href="./ar/">تصفح الموقع بالعربية</a></p>
+      </noscript>
+    </div>
+    <script>
+      (function () {
+        try {
+          var saved = window.localStorage.getItem("miftahuddin-locale");
+          var supported = ["en", "ar"];
+          var target = saved && supported.indexOf(saved) !== -1 ? saved : null;
+
+          if (!target) {
+            var nav = (navigator.language || "en").toLowerCase();
+            target = nav.indexOf("ar") === 0 ? "ar" : "en";
+          }
+
+          window.location.replace("./" + target + "/");
+        } catch (e) {
+          window.location.replace("./en/");
+        }
+      })();
+    </script>
+  </body>
+</html>
