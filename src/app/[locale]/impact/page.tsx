@@ -6,6 +6,7 @@ import { MotionReveal, MotionStagger } from "@/components/MotionReveal";
 import { PageHero } from "@/components/PageHero";
 import { StatCounter } from "@/components/StatCounter";
 import { Timeline, type TimelineItem } from "@/components/Timeline";
+import { ReachDiagram } from "@/components/ReachDiagram";
 import { CTA } from "@/components/CTA";
 
 export async function generateMetadata({
@@ -41,6 +42,7 @@ export default async function ImpactPage({
     label: string;
     description: string;
   }[];
+  const reachTowns = t.raw("reach.towns") as { name: string; km: number }[];
   const milestones = t.raw("milestones.items") as TimelineItem[];
 
   return (
@@ -81,6 +83,25 @@ export default async function ImpactPage({
             <p className="mx-auto mt-4 max-w-2xl text-balance leading-relaxed text-ink-500">
               {t("network.growth")}
             </p>
+          </MotionReveal>
+        </Container>
+      </section>
+
+      <section className="bg-ivory-50 py-24 sm:py-28">
+        <Container className="grid items-center gap-12 lg:grid-cols-2">
+          <MotionReveal>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-bronze-600">
+              {t("reach.kicker")}
+            </p>
+            <h2 className="text-balance font-serif text-3xl text-ink-900 sm:text-4xl">
+              {t("reach.title")}
+            </h2>
+            <p className="mt-5 max-w-md text-balance text-lg leading-relaxed text-ink-500">
+              {t("reach.subtitle")}
+            </p>
+          </MotionReveal>
+          <MotionReveal delay={0.1}>
+            <ReachDiagram center={t("reach.center")} unit={t("reach.unit")} towns={reachTowns} />
           </MotionReveal>
         </Container>
       </section>

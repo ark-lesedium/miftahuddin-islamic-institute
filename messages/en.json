@@ -215,6 +215,21 @@
       "body": "Miftahuddin's Makaatib, Masaajid and Musallahs span Kimberley's townships and reach into small towns including Windsorton, Prieska, Kathu, Douglas, Griekwastad, Hopetown, Britstown, Victoria West, Olifantshoek and Upington in the Northern Cape, and Koffiefontein, Jagersfontein, Boshof and Dealesville in the Free State.",
       "growth": "Earlier reports identified new Masaajid in Dealesville and Boshof as urgent, unmet needs. Alhamdulillah, both have since been completed — a small but telling sign of Miftahuddin's steady expansion despite the vast distances involved."
     },
+    "reach": {
+      "kicker": "How Far We Reach",
+      "title": "Distance from Kimberley",
+      "subtitle": "Six of Miftahuddin's centres, and the real distance a Musallee — or a resident Imam — travels to reach them.",
+      "center": "Kimberley",
+      "unit": "km",
+      "towns": [
+        { "name": "Ritchie", "km": 50 },
+        { "name": "Koffiefontein", "km": 100 },
+        { "name": "Dealesville", "km": 108 },
+        { "name": "Jagersfontein", "km": 161 },
+        { "name": "Britstown", "km": 225 },
+        { "name": "Victoria West", "km": 350 }
+      ]
+    },
     "legacy": {
       "kicker": "Over Five Decades",
       "title": "A Legacy Since 1974",

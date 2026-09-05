@@ -173,6 +173,27 @@
   .mask-fade-b {
     mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
   }
+
+  /*
+   * Editorial drop-cap for the opening paragraph of a story-style section.
+   * Disabled under RTL: Arabic letters change shape by position within a
+   * word, so isolating and enlarging just the first grapheme reads as a
+   * typographic error rather than a decorative flourish.
+   */
+  .editorial-dropcap:first-letter {
+    float: inline-start;
+    margin-inline-end: 0.5rem;
+    margin-block-start: 0.25rem;
+    font-family: var(--font-serif);
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 0.85;
+    color: var(--color-bronze-600);
+  }
+
+  [dir="rtl"] .editorial-dropcap:first-letter {
+    all: unset;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -8,6 +8,7 @@ import { Container } from "@/components/Container";
 import { SectionHeading } from "@/components/SectionHeading";
 import { MotionReveal, MotionStagger } from "@/components/MotionReveal";
 import { IslamicDivider } from "@/components/IslamicDivider";
+import { KeyMark } from "@/components/KeyMark";
 import { StatCounter } from "@/components/StatCounter";
 import { CTA } from "@/components/CTA";
 import { EmptyState } from "@/components/EmptyState";
@@ -68,9 +69,12 @@ export default async function HomePage({
             <h1 className="text-balance font-serif text-4xl font-medium text-ivory-50 sm:text-6xl md:text-7xl">
               {t("home.hero.title")}
             </h1>
-            <p className="mt-5 text-balance font-serif text-xl italic text-bronze-200 sm:text-2xl">
-              {t("home.hero.headline")}
-            </p>
+            <div className="mt-5 flex items-center justify-center gap-3">
+              <KeyMark className="h-6 w-auto text-bronze-400 sm:h-7" />
+              <p className="text-balance font-serif text-xl italic text-bronze-200 sm:text-2xl">
+                {t("home.hero.headline")}
+              </p>
+            </div>
             <p className="mx-auto mt-6 max-w-xl text-balance text-base leading-relaxed text-ivory-200 sm:text-lg">
               {t("home.hero.subtitle")}
             </p>

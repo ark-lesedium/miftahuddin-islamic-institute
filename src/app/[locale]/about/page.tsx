@@ -5,6 +5,8 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { MotionReveal, MotionStagger } from "@/components/MotionReveal";
 import { PageHero } from "@/components/PageHero";
 import { IslamicDivider } from "@/components/IslamicDivider";
+import { KeyMark } from "@/components/KeyMark";
+import { cn } from "@/lib/utils";
 
 export async function generateMetadata({
   params,
@@ -37,8 +39,9 @@ export default async function AboutPage({
         subtitle={t("hero.subtitle")}
       />
 
-      <section className="bg-ivory-50 py-24 sm:py-28">
-        <Container className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-start">
+      <section className="relative overflow-hidden bg-ivory-50 py-24 sm:py-28">
+        <KeyMark className="pointer-events-none absolute -start-12 top-8 h-80 w-auto -rotate-12 text-bronze-600/[0.05] sm:h-[26rem]" />
+        <Container className="relative grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-start">
           <MotionReveal>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-bronze-600">
               {t("history.kicker")}
@@ -50,7 +53,14 @@ export default async function AboutPage({
           <div className="space-y-5">
             {historyParagraphs.map((paragraph, i) => (
               <MotionReveal key={i} delay={i * 0.05}>
-                <p className="text-balance text-lg leading-relaxed text-ink-700">{paragraph}</p>
+                <p
+                  className={cn(
+                    "text-balance text-lg leading-relaxed text-ink-700",
+                    i === 0 && "editorial-dropcap",
+                  )}
+                >
+                  {paragraph}
+                </p>
               </MotionReveal>
             ))}
           </div>
