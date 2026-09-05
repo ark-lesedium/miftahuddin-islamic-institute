@@ -92,6 +92,12 @@ export function Footer() {
             {t("brand.nameArabic")}
           </p>
         </div>
+        <p className="mt-3 text-center text-[0.65rem] text-ivory-300/45 sm:text-start">
+          {t("footer.designedBy")}{" "}
+          <span dir="ltr" className="tracking-wide">
+            RANDPOWERSTATE
+          </span>
+        </p>
       </Container>
     </footer>
   );

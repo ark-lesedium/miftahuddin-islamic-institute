@@ -45,7 +45,7 @@ export function MobileMenu({
       {open && (
         <>
           <motion.div
-            className="fixed inset-0 z-40 bg-ink-900/40 lg:hidden"
+            className="fixed inset-0 z-40 bg-ink-900/40 xl:hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -57,7 +57,7 @@ export function MobileMenu({
             role="dialog"
             aria-modal="true"
             aria-label={t("nav.menu")}
-            className="fixed inset-y-0 z-50 flex w-full max-w-sm flex-col bg-ivory-50 pattern-geometric shadow-2xl lg:hidden"
+            className="fixed inset-y-0 z-50 flex w-full max-w-sm flex-col bg-ivory-50 pattern-geometric shadow-2xl xl:hidden"
             style={isRtl ? { insetInlineStart: 0 } : { insetInlineEnd: 0 }}
             initial={{ x: offset }}
             animate={{ x: 0 }}

@@ -12,7 +12,11 @@ import { KeyMark } from "@/components/KeyMark";
 import { StatCounter } from "@/components/StatCounter";
 import { CTA } from "@/components/CTA";
 import { EmptyState } from "@/components/EmptyState";
+import { HeroSlideshow } from "@/components/HeroSlideshow";
 import { assetPath } from "@/lib/asset-path";
+import { GALLERY_IMAGES, GALLERY_ORDER } from "@/data/gallery";
+
+const HERO_IMAGES = GALLERY_ORDER.map((id) => GALLERY_IMAGES[id].src);
 
 export async function generateMetadata({
   params,
@@ -48,10 +52,15 @@ export default async function HomePage({
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-ink-900 pattern-geometric-light">
+      <section className="relative overflow-hidden bg-ink-900">
+        <HeroSlideshow images={HERO_IMAGES} />
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink-900/0 via-ink-900/10 to-ink-900"
+          className="pointer-events-none absolute inset-0 bg-ink-900/72 pattern-geometric-light"
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink-900/25 via-ink-900/35 to-ink-900"
         />
         <Container className="relative flex min-h-[86vh] flex-col items-center justify-center gap-10 py-28 text-center sm:min-h-[92vh]">
           <MotionReveal className="flex flex-col items-center">

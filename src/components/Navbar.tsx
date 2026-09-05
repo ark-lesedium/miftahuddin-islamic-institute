@@ -60,16 +60,16 @@ export function Navbar() {
             priority
           />
           <span className="flex flex-col leading-tight">
-            <span className="font-serif text-base font-medium text-ink-900 sm:text-lg">
-              {t("brand.name")}
+            <span className="text-balance font-serif text-sm font-medium text-ink-900 sm:text-base lg:text-lg">
+              {t("brand.nameFull")}
             </span>
-            <span className="hidden text-[0.65rem] uppercase tracking-[0.16em] text-ink-500 sm:block">
+            <span className="hidden text-[0.65rem] uppercase tracking-[0.16em] text-ink-500 md:block">
               {t("brand.tagline")}
             </span>
           </span>
         </Link>
 
-        <ul className="hidden items-center gap-1 lg:flex">
+        <ul className="hidden items-center gap-1 xl:flex">
           {NAV_LINKS.map((link) => {
             const active =
               link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
@@ -102,7 +102,7 @@ export function Navbar() {
           <button
             type="button"
             onClick={() => setMobileOpen(true)}
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-ink-900/10 text-ink-900 transition-colors hover:bg-ink-900/5 lg:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-ink-900/10 text-ink-900 transition-colors hover:bg-ink-900/5 xl:hidden"
             aria-label={t("nav.menu")}
             aria-haspopup="dialog"
             aria-expanded={mobileOpen}

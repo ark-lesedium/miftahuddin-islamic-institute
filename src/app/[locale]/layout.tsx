@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter, Amiri, IBM_Plex_Sans_Arabic } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
@@ -7,6 +7,11 @@ import { routing, type Locale } from "@/i18n/routing";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import "../globals.css";
+
+export const viewport: Viewport = {
+  themeColor: "#71613d",
+  colorScheme: "light",
+};
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -47,20 +52,34 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-  const base = process.env.NEXT_PUBLIC_SITE_URL || "https://miftahuddin.example";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://miftahuddin.example";
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  const otherLocale = locale === "ar" ? "en" : "ar";
 
   return {
-    metadataBase: new URL(base),
+    // basePath is folded in here (rather than left to Next's own basePath
+    // injection) because that injection turned out to be inconsistent: it
+    // applies to file-convention icons but not reliably to relative
+    // og:image/alternates URLs resolved through metadataBase — see the
+    // object-form image fix below, which depends on this being absolute.
+    metadataBase: new URL(`${siteUrl}${basePath}`),
     title: {
       default: t("siteName"),
       template: t("titleTemplate"),
     },
     description: t("defaultDescription"),
+    keywords: t("keywords"),
+    applicationName: t("siteName"),
+    authors: [{ name: t("siteName") }],
+    creator: t("siteName"),
+    publisher: t("siteName"),
+    category: "Education",
     alternates: {
       canonical: `/${locale}/`,
       languages: {
         en: "/en/",
         ar: "/ar/",
+        "x-default": "/en/",
       },
     },
     openGraph: {
@@ -68,8 +87,17 @@ export async function generateMetadata({
       description: t("defaultDescription"),
       siteName: t("siteName"),
       locale: locale === "ar" ? "ar_SA" : "en_ZA",
+      alternateLocale: otherLocale === "ar" ? "ar_SA" : "en_ZA",
       type: "website",
-      images: ["/opengraph-image.png"],
+      url: `/${locale}/`,
+      images: [
+        {
+          url: "/opengraph-image.png",
+          width: 1200,
+          height: 630,
+          alt: t("siteName"),
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
@@ -80,6 +108,11 @@ export async function generateMetadata({
     robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+      },
     },
   };
 }
@@ -101,6 +134,38 @@ export default async function LocaleLayout({
   const messages = await getMessages();
   const dir = locale === "ar" ? "rtl" : "ltr";
 
+  const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://miftahuddin.example";
+  const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  const origin = `${SITE_URL}${BASE_PATH}`;
+
+  const meta = messages.meta as { siteName: string; defaultDescription: string };
+  const brand = messages.brand as { nameArabic: string };
+  const contactDetails = messages.contact as {
+    details: { addressLines: string[]; postal: string; email: string };
+  };
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": ["EducationalOrganization", "NGO"],
+    name: meta.siteName,
+    alternateName: brand.nameArabic,
+    url: `${origin}/${locale}/`,
+    logo: `${origin}/images/brand/logo-mark.png`,
+    image: `${origin}/opengraph-image.png`,
+    description: meta.defaultDescription,
+    foundingDate: "1974",
+    email: contactDetails.details.email,
+    telephone: "+27-53-832-1164",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: contactDetails.details.addressLines[0],
+      addressLocality: "Kimberley",
+      postalCode: "8300",
+      addressCountry: "ZA",
+    },
+    areaServed: ["Northern Cape", "Free State"],
+  };
+
   return (
     <html
       lang={locale}
@@ -108,6 +173,10 @@ export default async function LocaleLayout({
       className={`${fraunces.variable} ${inter.variable} ${amiri.variable} ${ibmArabic.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-ivory-100 text-ink-900">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <noscript>
           <style>{`[style*="opacity"]{opacity:1 !important;transform:none !important;}`}</style>
         </noscript>

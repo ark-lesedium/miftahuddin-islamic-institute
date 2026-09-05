@@ -2,7 +2,8 @@
   "meta": {
     "siteName": "Miftahuddin Islamic Institute",
     "titleTemplate": "%s | Miftahuddin Islamic Institute",
-    "defaultDescription": "Miftahuddin Islamic Institute is a Kimberley-based Islamic organisation dedicated to Ta'leem (education), social welfare and Tableegh across the Northern Cape and Free State, South Africa."
+    "defaultDescription": "Miftahuddin Islamic Institute is a Kimberley-based Islamic organisation dedicated to Ta'leem (education), social welfare and Tableegh across the Northern Cape and Free State, South Africa.",
+    "keywords": "Miftahuddin Islamic Institute, Islamic education Kimberley, Madrassah Kimberley, Makaatib Northern Cape, Masjid Northern Cape, Zakaat South Africa, Lillah donations, Islamic charity Kimberley, Muslim welfare South Africa, Ta'leem Tableegh"
   },
   "brand": {
     "name": "Miftahuddin",
@@ -450,7 +451,8 @@
     "navTitle": "Navigate",
     "contactTitle": "Contact",
     "languageTitle": "Language",
-    "copyright": "Miftahuddin Islamic Institute. All rights reserved."
+    "copyright": "Miftahuddin Islamic Institute. All rights reserved.",
+    "designedBy": "Designed by"
   },
   "notFound": {
     "title": "Page Not Found",
