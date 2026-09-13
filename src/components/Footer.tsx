@@ -18,13 +18,15 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr]">
           <div className="max-w-sm">
             <Link href="/" className="mb-4 flex items-center gap-3">
-              <Image
-                src={assetPath("/images/brand/logo-mark.png")}
-                alt=""
-                width={44}
-                height={45}
-                className="h-11 w-auto brightness-0 invert"
-              />
+              <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-ivory-50 p-2 shadow-sm">
+                <Image
+                  src={assetPath("/images/brand/logo-mark.png")}
+                  alt=""
+                  width={44}
+                  height={44}
+                  className="h-full w-auto"
+                />
+              </span>
               <span className="font-serif text-lg text-ivory-50">
                 {t("brand.nameFull")}
               </span>
@@ -61,10 +63,11 @@ export function Footer() {
               <li>{tContact("postal")}</li>
               <li>
                 <a
-                  href="tel:+27538321164"
+                  href="tel:+27828156786"
+                  dir="ltr"
                   className="transition-colors hover:text-ivory-50"
                 >
-                  {t("contact.details.officePhone")}
+                  {t("contact.details.officePhone1")}
                 </a>
               </li>
               <li>

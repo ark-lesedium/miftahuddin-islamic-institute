@@ -1,9 +1,5 @@
-// Angles are evenly spaced for legibility, not compass-accurate — this is a
-// distance diagram (radius = real km from Kimberley), not a geographic map.
-const ANGLES_DEG = [-90, -30, 30, 90, 150, 210];
-
 function radiusForKm(km: number) {
-  return 25 + Math.sqrt(km) * 8;
+  return 30 + Math.sqrt(km) * 9;
 }
 
 export function ReachDiagram({
@@ -15,11 +11,15 @@ export function ReachDiagram({
   unit: string;
   towns: { name: string; km: number }[];
 }) {
-  const size = 460;
+  const size = 520;
   const c = size / 2;
 
+  // Angles are evenly spaced for legibility, not compass-accurate — this is
+  // a distance diagram (radius = real km from Kimberley), not a geographic
+  // map, so there's no "correct" bearing to plot each town at.
   const points = towns.map((town, i) => {
-    const angle = (ANGLES_DEG[i % ANGLES_DEG.length] * Math.PI) / 180;
+    const angleDeg = -90 + (360 / towns.length) * i;
+    const angle = (angleDeg * Math.PI) / 180;
     const r = radiusForKm(town.km);
     return {
       ...town,
@@ -35,7 +35,7 @@ export function ReachDiagram({
       role="img"
       aria-label={center}
     >
-      {[85, 130, 175].map((r) => (
+      {[95, 145, 195].map((r) => (
         <circle
           key={r}
           cx={c}

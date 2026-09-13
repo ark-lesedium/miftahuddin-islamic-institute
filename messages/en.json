@@ -64,12 +64,12 @@
         {
           "title": "Social Welfare",
           "subtitle": "Khidmah",
-          "body": "From feeding schemes to bursaries and prison outreach, Miftahuddin's welfare work is an expression of Imaan — rooted in Zakat, compassion and justice for those in need."
+          "body": "From feeding schemes to bursaries and prison outreach, Miftahuddin's welfare work is an expression of Imaan — rooted in the Sunnah of the Prophet ﷺ, who showed us compassion and justice for those in need."
         },
         {
           "title": "Tableegh",
           "subtitle": "Outreach",
-          "body": "Miftahuddin strengthens Ukhuwwah within the community and shares the message of Islam beyond it, including through the Darul 'Ajaaib Islamic Museum."
+          "body": "Miftahuddin strengthens Ukhuwwah within the community by means of Dawah and Tableegh, showing the qualities of Islam to others — Tableegh and Jamaat to Muslims, Dawah to non-Muslims — striving always to strengthen our Ukhuwwah and our Imaan and obedience to Allah Ta'ala."
         }
       ]
     },
@@ -83,6 +83,18 @@
       "kicker": "Impact & Achievements",
       "title": "A Growing Presence Across the Northern Cape",
       "cta": "View Our Full Impact"
+    },
+    "studentsStat": {
+      "kicker": "Our Students",
+      "value": 450,
+      "suffix": "+",
+      "label": "Students in the Kimberley Makaatib",
+      "description": "Alhamdulillah, over 450 students are currently enrolled across our Kimberley Makaatib, taught by a staff of Ulama and Aalimahs."
+    },
+    "reachPreview": {
+      "kicker": "How Far We Reach",
+      "title": "Distance from Kimberley",
+      "cta": "See the Full Network"
     },
     "communityPreview": {
       "kicker": "Community",
@@ -117,7 +129,7 @@
       "title": "Since 1974",
       "paragraphs": [
         "Alhamdulillah, through the grace of Allah Ta'ala, Miftahuddin Islamic Institute has been in existence for over fifty years, since its inception in 1974. The Institute was established primarily for the assistance of poor and underprivileged people who ascribe to the Islamic faith, and secondarily for the needs of other underprivileged people wherever possible.",
-        "Assistance has been extended in many forms over the decades — distributing food parcels and clothing, slaughtering and distributing meat, running feeding schemes, facilitating religious education, offering moral guidance and counselling, arranging funerals, educating prisoners, seeing to the expenses of religious ceremonies such as marriages, and distributing money, food and clothing for the Eid festivals.",
+        "Assistance has been extended in many forms over the decades — distributing food parcels and clothing, slaughtering and distributing meat, running feeding schemes, facilitating religious education, offering moral guidance and counselling, arranging funerals, educating prisoners, seeing to the expenses of religious ceremonies such as marriages, distributing money, food and clothing for the Eid festivals, and maintaining the Darul 'Ajaaib Islamic Museum as a source of Da'wah to visitors.",
         "Each year, the Mini-Mina Qurbani Camp sees approximately 400 sheep, goats and cows slaughtered, with the meat distributed to Muslims and non-Muslims alike, while Ramadhaan brings Iftaar and Sehri to Miftahuddin's centres — and to the inmates of the prisons it serves."
       ]
     },
@@ -158,9 +170,9 @@
       "translation": "\"He who is not thankful to man cannot be thankful to Allah Ta'ala.\"",
       "attribution": "Rasulullah ﷺ"
     },
-    "leadershipNote": {
-      "kicker": "A Word From Our Leadership",
-      "body": "\"This report was prepared for your information, so that you may know where and how your contributions were utilised, and thus assess your investment for the Aakhirah. May Allah Ta'ala accept your contributions, and grant you manifold returns in this life and the Hereafter.\"",
+    "thankYouDonors": {
+      "kicker": "Thank You to Donors",
+      "body": "\"We cannot be grateful enough to all those who gave moral, physical, monetary and any other form of support to the institution for the sake of Allah. We continually make du'a that Allah Ta'ala reward them abundantly in Dunya and Aakhirah with all goodness and well-being.\"",
       "attribution": "Moulana M.E. Jeena"
     },
     "values": {
@@ -179,8 +191,16 @@
       "title": "The Makaatib System",
       "paragraphs": [
         "At the heart of Miftahuddin's educational mission is the Makaatib system — a network of Islamic schools that instils Qur'anic literacy and Islamic character in children from their earliest years. Besides empowering children through education, the Makaatib serve as their primary connection to the Deen of Islam, essential to the preservation of their Imaan and Islamic identity.",
-        "This network extends well beyond Kimberley, reaching small towns across the vast Northern Cape and into the Free State — including dedicated provision for a Hifz class, a girls' Madrasah with boarding, and even Madrasah classes held within two correctional facilities in Kimberley.",
+        "This network extends well beyond Kimberley, reaching small towns across the vast Northern Cape and into the Free State — including dedicated provision for a Hifz class, a girls' Madrasah with boarding, and Madrasah classes held within correctional facilities. There are four such facilities in the Northern Cape — two in Kimberley, one in Douglas and one in Upington — as well as two in the Free State.",
         "Seeking knowledge is highly valued in Islam. The Prophet Muhammad (peace be upon him) said, \"Seeking knowledge is an obligation upon every Muslim.\" Promoting education in this spirit helps fulfil that duty and empowers our community."
+      ]
+    },
+    "socialWelfare": {
+      "kicker": "Makaatib and Social Welfare",
+      "title": "Makaatib and Social Welfare",
+      "paragraphs": [
+        "Since our Makaatib are in predominantly disadvantaged areas, the majority of the students arrive hungry at Madressah. Their first meal was probably at the beginning of the day before going to school. Some go hungry and only eat again at night. There is therefore a need to give them some sort of provision to continue for the day.",
+        "Thus, Alhamdulillah, all the Makaatib in Kimberley — and one of the Maktabs outside of Kimberley — have snacks provided every day to the students, and a hot, freshly prepared meal is given to them on Fridays. Occasionally, this is extended to the other Makaatib outside of Kimberley as well, as and when we are able to."
       ]
     },
     "reach": {
@@ -205,11 +225,28 @@
       "subtitle": "Verified figures from Miftahuddin's Annual Report, reflecting years of quiet, sustained work across the Northern Cape and Free State."
     },
     "stats": [
-      { "value": 22, "suffix": "", "label": "Makaatib", "description": "Islamic schools across Kimberley and the Northern Cape" },
+      { "value": 22, "suffix": "", "label": "Makaatib", "description": "Islamic Madressahs across Kimberley and the Northern Cape" },
       { "value": 23, "suffix": "", "label": "Masaajid & Musallahs", "description": "16 Masaajid and 7 Salaah Khanas serving two provinces" },
       { "value": 51, "suffix": "", "label": "Team Members", "description": "Aalims, Aalimas and dedicated support staff" },
       { "value": 3000, "suffix": "+", "label": "Fed Each Eidul-Adha", "description": "Through the Qurbani feeding scheme's Mini-Mina camp" }
     ],
+    "qurbani": {
+      "kicker": "Mini Mina Qurbani Camp",
+      "title": "Reviving the Spirit of Qurbani",
+      "paragraphs": [
+        "A need was seen many years ago that the spirit of Qurbani has to be revived in Kimberley and the Northern Cape, and Alhamdulillah Maulana M.E. Jeena, after consultation with his elders, decided to have a Qurbani camp in Kimberley, where people will be encouraged to slaughter the animals as well as fulfil the Sunnah as a solution to those who are in need.",
+        "Keeping that in mind, it was started. Currently it takes place in two areas in Kimberley — Roodepan and Colville.",
+        "On the first day, approximately 250 sheep are slaughtered, and another 150 or so over the next two days. Distribution takes place of a greater portion of the meat in the days of Qurbani, with food being cooked and fed to those who are present, and meat parcels distributed to those who are present.",
+        "Besides that, every other part of the animal is also distributed — the kop (head), the pootjies (feet), and so on.",
+        "It also serves as a form of Dawah to the non-Muslims, where Hadhrat Maulana M.E. Jeena himself, whether it is hot or cold, will stand on the Mimbar and give Dawah to all the non-Muslims who are waiting for a small parcel at the end of the day.",
+        "Alhamdulillah, it has become a way and means for many people entering into Islam, and many people's perception of Islam has also changed due to them seeing the generosity of the Muslims and the Ukhuwwah of the Muslims."
+      ],
+      "stats": [
+        { "value": 400, "prefix": "~", "suffix": "", "label": "Sheep Slaughtered", "description": "Across the first three days of Qurbani" },
+        { "value": 3000, "prefix": "", "suffix": "+", "label": "People Fed", "description": "Meat parcels and hot, cooked meals" },
+        { "value": 2, "prefix": "", "suffix": "", "label": "Kimberley Camps", "description": "Roodepan and Colville" }
+      ]
+    },
     "network": {
       "kicker": "Our Network",
       "title": "Kimberley, the Northern Cape & the Free State",
@@ -219,17 +256,46 @@
     "reach": {
       "kicker": "How Far We Reach",
       "title": "Distance from Kimberley",
-      "subtitle": "Six of Miftahuddin's centres, and the real distance a Musallee — or a resident Imam — travels to reach them.",
+      "subtitle": "The following illustration denotes the vast distances the members of Miftahuddin need to travel and traverse when doing checks across the centres in the Northern Cape and Free State.",
       "center": "Kimberley",
       "unit": "km",
-      "towns": [
-        { "name": "Ritchie", "km": 50 },
+      "diagramTowns": [
+        { "name": "Windsorton", "km": 55 },
+        { "name": "Hopetown", "km": 120 },
         { "name": "Koffiefontein", "km": 100 },
         { "name": "Dealesville", "km": 108 },
         { "name": "Jagersfontein", "km": 161 },
         { "name": "Britstown", "km": 225 },
+        { "name": "Upington", "km": 410 },
         { "name": "Victoria West", "km": 350 }
-      ]
+      ],
+      "provinces": [
+        {
+          "name": "Northern Cape",
+          "towns": [
+            { "name": "Windsorton", "km": 55 },
+            { "name": "Prieska", "km": 240 },
+            { "name": "Kathu", "km": 205 },
+            { "name": "Douglas", "km": 110 },
+            { "name": "Griekwastad", "km": 150 },
+            { "name": "Hopetown", "km": 120 },
+            { "name": "Britstown", "km": 225 },
+            { "name": "Victoria West", "km": 350 },
+            { "name": "Olifantshoek", "km": 270 },
+            { "name": "Upington", "km": 410 }
+          ]
+        },
+        {
+          "name": "Free State",
+          "towns": [
+            { "name": "Koffiefontein", "km": 100 },
+            { "name": "Jagersfontein", "km": 161 },
+            { "name": "Boshof", "km": 60 },
+            { "name": "Dealesville", "km": 108 }
+          ]
+        }
+      ],
+      "approxNote": "Distances from Kimberley's own reports are exact; the remainder are approximate road distances."
     },
     "legacy": {
       "kicker": "Over Five Decades",
@@ -276,14 +342,19 @@
         },
         {
           "title": "Dealesville Masjid",
-          "period": "Nearing completion",
-          "body": "Situated 108km from Kimberley on the old Bloemfontein road, this project is in its final stages, alhamdulillah."
+          "period": "Completed",
+          "body": "Situated 108km from Kimberley on the old Bloemfontein road, this project is now complete, alhamdulillah."
+        },
+        {
+          "title": "Christiana Masjid",
+          "period": "Started",
+          "body": "Construction has started on a new Masjid in Christiana, another step in Miftahuddin's ongoing expansion across the Free State."
         }
       ]
     },
     "renovations": {
       "title": "Renovation & Maintenance",
-      "body": "Alongside new construction, major renovation work has taken place at Beaconsfield (Wudhu Khana and Imam's House), Windsorton (borehole water distribution and Imam's House) and Musallah Abu Bakr in Seocheoreng Street, Galeshewe (complete renovation including a new Mehraab, Imam's quarters and Musallahs). Funds remain continuously needed for the upkeep of every Masjid and Madrasah in the network."
+      "body": "Major renovations are now taking place at Roodepan Masjid, alongside upcoming renovations to the girls' Madressah. Funds remain continuously needed for the upkeep of every Masjid and Madrasah in the network."
     }
   },
   "leadership": {
@@ -294,7 +365,7 @@
     },
     "message": {
       "kicker": "A Message From Our Leadership",
-      "quote": "This newsletter and annual report was prepared for your information, so that you may know where and how your contributions were utilised, and you may thus assess your investment for the Aakhirah. We cannot be grateful enough to all those who gave moral, physical, monetary and any other form of support to the institution for the sake of Allah. We continually make du'a that Allah Ta'ala reward them abundantly in Dunya and Aakhirah with all goodness and well-being.",
+      "quote": "This website was prepared for your information, so that you may know where and how your contributions were utilised, and you may thus assess your investment for the Aakhirah. We cannot be grateful enough to all those who gave moral, physical, monetary and any other form of support to the institution for the sake of Allah. We continually make du'a that Allah Ta'ala reward them abundantly in Dunya and Aakhirah with all goodness and well-being.",
       "attribution": "Moulana M.E. Jeena"
     },
     "team": {
@@ -324,6 +395,14 @@
       "title": "From the Institute",
       "subtitle": "Announcements, project updates and stories from across the Miftahuddin network."
     },
+    "items": [
+      {
+        "id": "cbd-masjid",
+        "title": "A New Masjid for Kimberley's CBD",
+        "summary": "A church was bought, Alhamdulillah, with the help of generous donors. Salaah has already started, with a dedicated Imam.",
+        "body": "A church was bought, Alhamdulillah, with the help of generous donors. Salaah has already started, with a dedicated Imam. It is not yet 100% completed, as we are still waiting for the arrival of Musallahs. The Masjid is here to service the broader CBD area and the broader community of Kimberley."
+      }
+    ],
     "empty": {
       "title": "Updates Are Being Prepared",
       "body": "This section is structured and ready to publish news as it is released by the Institute — new Masaajid, Madrasah developments, welfare initiatives and community events. Please check back soon.",
@@ -385,13 +464,16 @@
     "details": {
       "title": "Contact Details",
       "addressLabel": "Address",
-      "addressLines": ["12 Nargis Crescent, Moghul Park", "Kimberley, 8300", "South Africa"],
+      "addressLines": ["10 Nargis Crescent, Moghul Street", "Kimberley, 8300", "South Africa"],
       "postalLabel": "Postal Address",
       "postal": "P.O. Box 542, Kimberley, 8300",
-      "phoneLabel": "Telephone",
-      "officePhone": "Office: (053) 832 1164",
-      "homePhone": "Home: (053) 832 7555",
-      "mobilePhone": "Mobile: 082 815 6786",
+      "phoneLabel": "Telephone / WhatsApp",
+      "officePhone1Label": "Office 1",
+      "officePhone1": "082 815 6786",
+      "officePhone2Label": "Office 2",
+      "officePhone2": "082 518 9669",
+      "generalPhoneLabel": "General",
+      "generalPhone": "072 256 9288",
       "emailLabel": "Email",
       "email": "miftahuddininstitute@gmail.com"
     },
@@ -399,23 +481,24 @@
       "kicker": "Zakaat & Donations",
       "title": "Ways to Give",
       "intro": "Miftahuddin relies entirely on the generosity of the Muslim public. Lillah and Zakaat may be paid directly into the accounts below.",
+      "accountName": "Miftahuddin Islamic Institute",
       "accounts": [
         {
-          "label": "Zakaat Account",
+          "type": "Zakaat Account",
           "bank": "First National Bank (FNB)",
           "accountNumber": "543 600 313 46",
           "branchCode": "Branch code: 231002",
           "note": "Cash deposits to this account do not attract a cash deposit fee."
         },
         {
-          "label": "Zakaat Account",
+          "type": "Zakaat Account",
           "bank": "Standard Bank",
           "accountNumber": "040 109 879",
           "branchCode": "",
           "note": ""
         },
         {
-          "label": "Lillah Account",
+          "type": "Lillah Account",
           "bank": "First National Bank (FNB)",
           "accountNumber": "526 339 258 66",
           "branchCode": "Branch code: 231002",
@@ -427,6 +510,11 @@
       "proofLabel": "Proof of Payment",
       "proofEmail": "Email your proof of payment to",
       "proofWhatsapp": "or WhatsApp it to"
+    },
+    "leadershipMessage": {
+      "kicker": "A Word From Our Leadership",
+      "body": "This report was prepared for your information, so that you may know where and how your contributions were utilised, and thus assess your investment for the Aakhirah. May Allah Ta'ala accept your contributions, and grant you manifold returns in this life and the Hereafter.",
+      "attribution": "Moulana M.E. Jeena"
     },
     "map": {
       "title": "Find Us"

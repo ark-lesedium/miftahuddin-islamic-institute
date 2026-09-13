@@ -55,7 +55,7 @@ export function Navbar() {
             src={assetPath("/images/brand/logo-mark.png")}
             alt=""
             width={40}
-            height={41}
+            height={40}
             className="h-9 w-auto sm:h-10"
             priority
           />

@@ -6,6 +6,7 @@ import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { MotionReveal, MotionStagger } from "@/components/MotionReveal";
 import { ContactForm } from "@/components/ContactForm";
+import { IslamicDivider } from "@/components/IslamicDivider";
 
 export async function generateMetadata({
   params,
@@ -28,7 +29,7 @@ export default async function ContactPage({
   const t = await getTranslations("contact");
   const addressLines = t.raw("details.addressLines") as string[];
   const accounts = t.raw("giving.accounts") as {
-    label: string;
+    type: string;
     bank: string;
     accountNumber: string;
     branchCode: string;
@@ -74,18 +75,21 @@ export default async function ContactPage({
                     {t("details.phoneLabel")}
                   </p>
                   <p className="text-ink-700">
-                    <a className="hover:text-teal-700" href="tel:+27538321164">
-                      {t("details.officePhone")}
-                    </a>
-                  </p>
-                  <p className="text-ink-700">
-                    <a className="hover:text-teal-700" href="tel:+27538327555">
-                      {t("details.homePhone")}
-                    </a>
-                  </p>
-                  <p className="text-ink-700">
+                    <span className="text-ink-500">{t("details.officePhone1Label")}: </span>
                     <a className="hover:text-teal-700" href="tel:+27828156786">
-                      {t("details.mobilePhone")}
+                      {t("details.officePhone1")}
+                    </a>
+                  </p>
+                  <p className="text-ink-700">
+                    <span className="text-ink-500">{t("details.officePhone2Label")}: </span>
+                    <a className="hover:text-teal-700" href="tel:+27825189669">
+                      {t("details.officePhone2")}
+                    </a>
+                  </p>
+                  <p className="text-ink-700">
+                    <span className="text-ink-500">{t("details.generalPhoneLabel")}: </span>
+                    <a className="hover:text-teal-700" href="tel:+27722569288">
+                      {t("details.generalPhone")}
                     </a>
                   </p>
                 </div>
@@ -122,7 +126,7 @@ export default async function ContactPage({
                 <p className="text-sm text-ink-500">Northern Cape, South Africa</p>
               </div>
               <a
-                href="https://www.google.com/maps/search/?api=1&query=12+Nargis+Crescent%2C+Moghul+Park%2C+Kimberley%2C+South+Africa"
+                href="https://www.google.com/maps/search/?api=1&query=10+Nargis+Crescent%2C+Moghul+Street%2C+Kimberley%2C+South+Africa"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block border-t border-bronze-200 bg-ivory-50 px-5 py-3 text-center text-sm font-semibold text-teal-700 hover:text-teal-800"
@@ -155,13 +159,14 @@ export default async function ContactPage({
           <MotionStagger className="grid gap-5 sm:grid-cols-3">
             {accounts.map((account, i) => (
               <MotionReveal
-                key={`${account.label}-${i}`}
+                key={`${account.type}-${i}`}
                 className="rounded-2xl border border-bronze-200 bg-ivory-50 p-6"
               >
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-bronze-600">
-                  {account.label}
-                </p>
-                <p className="mt-2 font-serif text-lg text-ink-900">{account.bank}</p>
+                <span className="inline-block rounded-full bg-bronze-100 px-2.5 py-0.5 text-xs font-semibold text-bronze-700">
+                  {account.type}
+                </span>
+                <p className="mt-3 font-serif text-lg text-ink-900">{t("giving.accountName")}</p>
+                <p className="text-sm text-ink-500">{account.bank}</p>
                 <p dir="ltr" className="mt-3 text-end text-xl font-semibold tracking-wide text-teal-800 sm:text-start">
                   {account.accountNumber}
                 </p>
@@ -204,6 +209,23 @@ export default async function ContactPage({
                 082 815 6786
               </a>
               .
+            </p>
+          </MotionReveal>
+        </Container>
+      </section>
+
+      <section className="bg-ivory-50 py-24 sm:py-28">
+        <Container className="max-w-2xl text-center">
+          <MotionReveal>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-bronze-600">
+              {t("leadershipMessage.kicker")}
+            </p>
+            <IslamicDivider className="mb-6" />
+            <p className="text-balance font-serif text-xl italic leading-relaxed text-ink-700 sm:text-2xl">
+              &ldquo;{t("leadershipMessage.body")}&rdquo;
+            </p>
+            <p className="mt-5 text-sm font-semibold uppercase tracking-[0.16em] text-bronze-600">
+              — {t("leadershipMessage.attribution")}
             </p>
           </MotionReveal>
         </Container>

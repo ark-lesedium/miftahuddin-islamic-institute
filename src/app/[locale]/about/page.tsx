@@ -139,14 +139,14 @@ export default async function AboutPage({
         <Container className="max-w-2xl text-center">
           <MotionReveal>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-bronze-600">
-              {t("leadershipNote.kicker")}
+              {t("thankYouDonors.kicker")}
             </p>
             <IslamicDivider className="mb-6" />
             <p className="text-balance font-serif text-xl italic leading-relaxed text-ink-700 sm:text-2xl">
-              {t("leadershipNote.body")}
+              {t("thankYouDonors.body")}
             </p>
             <p className="mt-5 text-sm font-semibold uppercase tracking-[0.16em] text-bronze-600">
-              — {t("leadershipNote.attribution")}
+              — {t("thankYouDonors.attribution")}
             </p>
           </MotionReveal>
         </Container>

@@ -155,7 +155,7 @@ export default async function LocaleLayout({
     description: meta.defaultDescription,
     foundingDate: "1974",
     email: contactDetails.details.email,
-    telephone: "+27-53-832-1164",
+    telephone: "+27-82-815-6786",
     address: {
       "@type": "PostalAddress",
       streetAddress: contactDetails.details.addressLines[0],

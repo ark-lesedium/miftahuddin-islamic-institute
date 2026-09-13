@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import { Users } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Container } from "@/components/Container";
 import { SectionHeading } from "@/components/SectionHeading";
 import { MotionReveal, MotionStagger } from "@/components/MotionReveal";
 import { PageHero } from "@/components/PageHero";
 import { IslamicDivider } from "@/components/IslamicDivider";
-import { EmptyState } from "@/components/EmptyState";
 
 export async function generateMetadata({
   params,
@@ -69,16 +67,6 @@ export default async function LeadershipPage({
               </MotionReveal>
             ))}
           </MotionStagger>
-        </Container>
-      </section>
-
-      <section className="bg-ivory-50 py-24 sm:py-28">
-        <Container>
-          <EmptyState
-            title={t("profiles.title")}
-            body={t("profiles.body")}
-            icon={<Users size={22} strokeWidth={1.5} />}
-          />
         </Container>
       </section>
     </>

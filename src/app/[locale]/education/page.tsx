@@ -30,6 +30,7 @@ export default async function EducationPage({
   const t = await getTranslations("education");
   const tHome = await getTranslations("home");
   const introParagraphs = t.raw("intro.paragraphs") as string[];
+  const socialWelfareParagraphs = t.raw("socialWelfare.paragraphs") as string[];
 
   return (
     <>
@@ -63,6 +64,19 @@ export default async function EducationPage({
       </section>
 
       <section className="bg-bronze-50/60 py-20 sm:py-24">
+        <Container className="max-w-3xl">
+          <SectionHeading kicker={t("socialWelfare.kicker")} title={t("socialWelfare.title")} />
+          <div className="mt-6 space-y-5">
+            {socialWelfareParagraphs.map((paragraph, i) => (
+              <MotionReveal key={i} delay={i * 0.05}>
+                <p className="text-balance text-lg leading-relaxed text-ink-700">{paragraph}</p>
+              </MotionReveal>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-ivory-50 py-20 sm:py-24">
         <Container className="max-w-3xl text-center">
           <MotionReveal>
             <h2 className="text-balance font-serif text-2xl text-ink-900 sm:text-3xl">
@@ -75,7 +89,7 @@ export default async function EducationPage({
         </Container>
       </section>
 
-      <section className="bg-ivory-50 py-20 sm:py-24">
+      <section className="bg-bronze-50/60 py-20 sm:py-24">
         <Container className="max-w-3xl text-center">
           <MotionReveal>
             <h2 className="text-balance font-serif text-2xl text-ink-900 sm:text-3xl">

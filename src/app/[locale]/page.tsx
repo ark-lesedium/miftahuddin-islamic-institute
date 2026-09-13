@@ -1,6 +1,5 @@
 import Image from "next/image";
 import type { Metadata } from "next";
-import { Newspaper } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
@@ -11,8 +10,9 @@ import { IslamicDivider } from "@/components/IslamicDivider";
 import { KeyMark } from "@/components/KeyMark";
 import { StatCounter } from "@/components/StatCounter";
 import { CTA } from "@/components/CTA";
-import { EmptyState } from "@/components/EmptyState";
 import { HeroSlideshow } from "@/components/HeroSlideshow";
+import { NewsSlideshow } from "@/components/NewsSlideshow";
+import { ReachDiagram } from "@/components/ReachDiagram";
 import { assetPath } from "@/lib/asset-path";
 import { GALLERY_IMAGES, GALLERY_ORDER } from "@/data/gallery";
 
@@ -48,6 +48,8 @@ export default async function HomePage({
     label: string;
     description: string;
   }[];
+  const newsItems = t.raw("news.items") as { id: string; title: string; summary: string }[];
+  const diagramTowns = t.raw("impact.reach.diagramTowns") as { name: string; km: number }[];
 
   return (
     <>
@@ -64,14 +66,16 @@ export default async function HomePage({
         />
         <Container className="relative flex min-h-[86vh] flex-col items-center justify-center gap-10 py-28 text-center sm:min-h-[92vh]">
           <MotionReveal className="flex flex-col items-center">
-            <Image
-              src={assetPath("/images/brand/logo-mark.png")}
-              alt=""
-              width={120}
-              height={123}
-              priority
-              className="mb-8 h-24 w-auto brightness-0 invert sm:h-28"
-            />
+            <span className="mb-8 flex h-28 w-28 shrink-0 items-center justify-center rounded-full bg-ivory-50 p-4 shadow-lg sm:h-32 sm:w-32">
+              <Image
+                src={assetPath("/images/brand/logo-mark.png")}
+                alt=""
+                width={120}
+                height={120}
+                priority
+                className="h-full w-auto"
+              />
+            </span>
             <p className="mb-5 text-xs font-semibold uppercase tracking-[0.28em] text-bronze-300 sm:text-sm">
               {t("home.hero.kicker")}
             </p>
@@ -105,6 +109,30 @@ export default async function HomePage({
             <span className="h-8 w-px animate-pulse bg-ivory-300/40" />
           </span>
         </div>
+      </section>
+
+      {/* News — kept at the top of the homepage so recent updates are the first thing visitors see */}
+      <section className="bg-bronze-50/60 py-20 sm:py-24">
+        <Container className="max-w-3xl">
+          <SectionHeading
+            align="center"
+            kicker={t("home.newsPreview.kicker")}
+            title={t("home.newsPreview.title")}
+            className="mx-auto mb-10"
+          />
+          <NewsSlideshow items={newsItems} />
+          <MotionReveal className="mt-8 text-center">
+            <Link
+              href="/news"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-teal-700 hover:text-teal-800"
+            >
+              {t("home.newsPreview.cta")}
+              <span aria-hidden className="rtl:rotate-180">
+                &rarr;
+              </span>
+            </Link>
+          </MotionReveal>
+        </Container>
       </section>
 
       {/* Introduction */}
@@ -186,6 +214,29 @@ export default async function HomePage({
         </Container>
       </section>
 
+      {/* Total students */}
+      <section className="bg-bronze-50/60 py-16 sm:py-20">
+        <Container className="max-w-2xl text-center">
+          <MotionReveal>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-bronze-600">
+              {t("home.studentsStat.kicker")}
+            </p>
+            <p className="font-serif text-6xl text-teal-800 sm:text-7xl">
+              <StatCounter
+                value={t.raw("home.studentsStat.value") as number}
+                suffix={t("home.studentsStat.suffix")}
+              />
+            </p>
+            <p className="mt-2 text-lg font-semibold text-ink-900">
+              {t("home.studentsStat.label")}
+            </p>
+            <p className="mx-auto mt-3 max-w-xl text-balance leading-relaxed text-ink-500">
+              {t("home.studentsStat.description")}
+            </p>
+          </MotionReveal>
+        </Container>
+      </section>
+
       {/* Impact preview */}
       <section className="bg-ink-900 pattern-geometric-light py-24 sm:py-28">
         <Container>
@@ -218,8 +269,38 @@ export default async function HomePage({
         </Container>
       </section>
 
-      {/* Community preview */}
+      {/* Reach diagram preview */}
       <section className="bg-ivory-50 py-24 sm:py-28">
+        <Container>
+          <SectionHeading
+            align="center"
+            kicker={t("home.reachPreview.kicker")}
+            title={t("home.reachPreview.title")}
+            className="mx-auto mb-12"
+          />
+          <MotionReveal className="mx-auto max-w-xl">
+            <ReachDiagram
+              center={t("impact.reach.center")}
+              unit={t("impact.reach.unit")}
+              towns={diagramTowns}
+            />
+          </MotionReveal>
+          <MotionReveal className="mt-8 text-center">
+            <Link
+              href="/impact"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-teal-700 hover:text-teal-800"
+            >
+              {t("home.reachPreview.cta")}
+              <span aria-hidden className="rtl:rotate-180">
+                &rarr;
+              </span>
+            </Link>
+          </MotionReveal>
+        </Container>
+      </section>
+
+      {/* Community preview */}
+      <section className="bg-bronze-50/60 py-24 sm:py-28">
         <Container className="grid items-center gap-12 lg:grid-cols-2">
           <MotionReveal
             delay={0.1}
@@ -248,34 +329,6 @@ export default async function HomePage({
               className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-teal-700 hover:text-teal-800"
             >
               {t("home.communityPreview.cta")}
-              <span aria-hidden className="rtl:rotate-180">
-                &rarr;
-              </span>
-            </Link>
-          </MotionReveal>
-        </Container>
-      </section>
-
-      {/* News preview */}
-      <section className="bg-bronze-50/60 py-24 sm:py-28">
-        <Container>
-          <SectionHeading
-            align="center"
-            kicker={t("home.newsPreview.kicker")}
-            title={t("home.newsPreview.title")}
-            className="mx-auto mb-12"
-          />
-          <EmptyState
-            title={t("news.empty.title")}
-            body={t("news.empty.body")}
-            icon={<Newspaper size={22} strokeWidth={1.5} />}
-          />
-          <MotionReveal className="mt-10 text-center">
-            <Link
-              href="/news"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-teal-700 hover:text-teal-800"
-            >
-              {t("home.newsPreview.cta")}
               <span aria-hidden className="rtl:rotate-180">
                 &rarr;
               </span>
@@ -315,13 +368,15 @@ export default async function HomePage({
                 <p className="mt-1 font-medium">{t("contact.details.email")}</p>
               </a>
               <a
-                href="tel:+27538321164"
+                href="tel:+27828156786"
                 className="rounded-2xl border border-bronze-200 bg-ivory-100 px-6 py-5 transition-colors hover:border-teal-600"
               >
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-bronze-500">
                   {t("contact.details.phoneLabel")}
                 </p>
-                <p className="mt-1 font-medium">{t("contact.details.officePhone")}</p>
+                <p dir="ltr" className="mt-1 font-medium">
+                  {t("contact.details.officePhone1")}
+                </p>
               </a>
             </div>
             <Button asChild variant="teal" className="mt-8">
