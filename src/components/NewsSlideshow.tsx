@@ -14,7 +14,9 @@ type NewsItem = {
   summary: string;
   body?: string;
   image?: GalleryImageId;
+  imagePosition?: "center" | "bottom";
   live?: boolean;
+  badgeLabel?: string;
   marquee?: string[];
 };
 
@@ -64,7 +66,9 @@ export function NewsSlideshow({
                   alt={item.title}
                   fill
                   sizes="(min-width: 1024px) 50vw, 100vw"
-                  className="object-cover"
+                  className={
+                    item.imagePosition === "bottom" ? "object-cover object-bottom" : "object-cover"
+                  }
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink-900/35 via-transparent to-transparent" />
               </motion.div>
@@ -75,7 +79,7 @@ export function NewsSlideshow({
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-75" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-teal-400" />
                 </span>
-                {t("liveBadge")}
+                {item.badgeLabel ?? t("liveBadge")}
               </span>
             ) : null}
           </div>

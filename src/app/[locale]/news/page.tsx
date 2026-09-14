@@ -31,7 +31,9 @@ export default async function NewsPage({
     summary: string;
     body?: string;
     image?: GalleryImageId;
+    imagePosition?: "center" | "bottom";
     live?: boolean;
+    badgeLabel?: string;
     marquee?: string[];
   }[];
 

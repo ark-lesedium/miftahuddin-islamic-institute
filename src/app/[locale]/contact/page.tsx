@@ -146,7 +146,7 @@ export default async function ContactPage({
         </Container>
       </section>
 
-      <section className="bg-bronze-50/60 py-24 sm:py-28">
+      <section id="giving" className="scroll-mt-24 bg-bronze-50/60 py-24 sm:py-28">
         <Container className="max-w-4xl">
           <SectionHeading
             align="center"

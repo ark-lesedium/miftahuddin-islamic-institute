@@ -60,7 +60,9 @@ export default async function HomePage({
     title: string;
     summary: string;
     image?: GalleryImageId;
+    imagePosition?: "center" | "bottom";
     live?: boolean;
+    badgeLabel?: string;
     marquee?: string[];
   }[];
   const diagramTowns = t.raw("impact.reach.diagramTowns") as { name: string; km: number }[];
@@ -234,7 +236,7 @@ export default async function HomePage({
           </MotionReveal>
           <MotionReveal delay={0.1} className="relative aspect-[4/5] overflow-hidden rounded-3xl">
             <Image
-              src={assetPath("/images/gallery/galeshewe-minaret.jpg")}
+              src={assetPath("/images/gallery/cbd-masjid-interior.jpg")}
               alt=""
               fill
               sizes="(min-width: 1024px) 40vw, 90vw"
@@ -313,6 +315,8 @@ export default async function HomePage({
               center={t("impact.reach.center")}
               unit={t("impact.reach.unit")}
               towns={diagramTowns}
+              mapsHint={t("impact.reach.mapsHint")}
+              mapsButtonLabel={t("impact.reach.mapsButtonLabel")}
             />
           </MotionReveal>
           <MotionReveal className="mt-8 text-center">
@@ -337,7 +341,7 @@ export default async function HomePage({
             className="relative order-2 aspect-[4/5] overflow-hidden rounded-3xl lg:order-1"
           >
             <Image
-              src={assetPath("/images/gallery/britstown-interior.jpg")}
+              src={assetPath("/images/gallery/roodepan-sunset.jpg")}
               alt=""
               fill
               sizes="(min-width: 1024px) 40vw, 90vw"
@@ -363,6 +367,51 @@ export default async function HomePage({
                 &rarr;
               </span>
             </Link>
+          </MotionReveal>
+        </Container>
+      </section>
+
+      {/* Current Projects — The Lemon Project */}
+      <section className="bg-ivory-50 py-24 sm:py-28">
+        <Container className="grid items-center gap-12 lg:grid-cols-2">
+          <MotionReveal>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-bronze-600">
+              {t("home.currentProjects.kicker")}
+            </p>
+            <h2 className="text-balance font-serif text-3xl text-ink-900 sm:text-4xl">
+              {t("home.currentProjects.title")}
+            </h2>
+            <p className="mt-5 text-balance text-lg leading-relaxed text-ink-500">
+              {t("home.currentProjects.body")}
+            </p>
+            <a
+              href="https://thelemonproject.co.za/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-teal-700 hover:text-teal-800"
+            >
+              {t("home.currentProjects.cta")}
+              <span aria-hidden className="rtl:rotate-180">
+                &rarr;
+              </span>
+            </a>
+          </MotionReveal>
+          <MotionReveal delay={0.1}>
+            <a
+              href="https://thelemonproject.co.za/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative block aspect-[16/10] overflow-hidden rounded-3xl shadow-sm"
+            >
+              <Image
+                src={assetPath("/images/projects/lemon-project.jpg")}
+                alt={t("home.currentProjects.imageAlt")}
+                fill
+                sizes="(min-width: 1024px) 40vw, 90vw"
+                className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink-900/50 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            </a>
           </MotionReveal>
         </Container>
       </section>

@@ -95,7 +95,13 @@ export function Navbar() {
           })}
         </ul>
 
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex items-center gap-1.5 sm:gap-2.5">
+          <Link
+            href="/contact#giving"
+            className="hidden items-center rounded-full bg-bronze-500 px-3.5 py-1.5 text-sm font-semibold text-ink-900 shadow-sm transition-transform hover:scale-[1.03] xl:inline-flex"
+          >
+            {t("common.donate")}
+          </Link>
           <div className="hidden sm:block">
             <LanguageSwitcher />
           </div>

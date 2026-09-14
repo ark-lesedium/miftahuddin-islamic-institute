@@ -34,6 +34,7 @@
     "ourStory": "Our Story",
     "backToTop": "Back to top",
     "comingSoon": "Coming Soon",
+    "donate": "Donate",
     "placeholderNote": "This section is structured to receive new content as it is confirmed by the Institute.",
     "allRightsReserved": "All rights reserved."
   },
@@ -106,6 +107,13 @@
       "kicker": "News & Updates",
       "title": "From the Institute",
       "cta": "View All Updates"
+    },
+    "currentProjects": {
+      "kicker": "Empowerment Projects",
+      "title": "The Lemon Project",
+      "body": "Kimberley loses thousands of lemons to waste every season. Grown out of Miftahuddin's Sour Lemon skills programme, The Lemon Project shares free, practical guides for using them — in the kitchen, for cleaning, in the garden and beyond — one household at a time.",
+      "cta": "Visit The Lemon Project",
+      "imageAlt": "The Lemon Project website"
     },
     "cta": {
       "title": "Join Us in This Noble Cause",
@@ -256,9 +264,12 @@
     },
     "future": {
       "kicker": "Programmes",
-      "title": "Individual Programmes — Coming Soon",
-      "body": "Miftahuddin's specific programme offerings — including curricula, entry requirements, schedules, duration and how to apply — will be published here once officially confirmed. This section has been structured so that each future programme can receive its own dedicated page.",
-      "placeholderLabel": "Programme details to be announced"
+      "title": "Madrassah Tamim ul Banaat",
+      "body": "Madrassah Tamim ul Banaat is Miftahuddin's boarding Madressah for girls — part of the wider Makaatib network described above, giving female students structured Islamic education alongside safe, residential accommodation for the duration of their Deeni studies.",
+      "admissions": {
+        "label": "For Admissions & Enquiries",
+        "body": "Contact Miftahuddin's offices to learn more about enrolment."
+      }
     }
   },
   "impact": {
@@ -338,7 +349,9 @@
           ]
         }
       ],
-      "approxNote": "Distances from Kimberley's own reports are exact; the remainder are approximate road distances."
+      "approxNote": "Distances from Kimberley's own reports are exact; the remainder are approximate road distances.",
+      "mapsHint": "Tap a town on the diagram to open it in Google Maps.",
+      "mapsButtonLabel": "Open Kimberley in Google Maps"
     },
     "legacy": {
       "kicker": "Over Five Decades",
@@ -452,6 +465,21 @@
           "Join us for Salaah — everyone is welcome",
           "Musallahs are still needed to finish the Masjid",
           "A former church, reborn as a house of Allah"
+        ]
+      },
+      {
+        "id": "cbd-masjid-upgrade",
+        "title": "Renovations Under Way at the CBD Masjid",
+        "summary": "Our team is on-site right now finishing the grounds and facilities so the Masjid can be fully completed.",
+        "body": "Work continues on-site at the new CBD Masjid, Alhamdulillah. Contractors and volunteers are pressing ahead with the final stages of the conversion — finishing the grounds, sorting out ablution facilities, and preparing for the Musallahs still to arrive. The photo below captures the Masjid mid-transformation, a reminder that every stage of this project has been carried by the generosity of donors.",
+        "image": "cbd-masjid-signage",
+        "imagePosition": "bottom",
+        "live": true,
+        "badgeLabel": "In Progress",
+        "marquee": [
+          "Renovations under way right now",
+          "Every donation moves the work forward",
+          "Follow our progress — visit or give today"
         ]
       }
     ],

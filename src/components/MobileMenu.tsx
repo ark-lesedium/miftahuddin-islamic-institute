@@ -8,6 +8,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { NAV_LINKS } from "./nav-links";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
 
 export function MobileMenu({
@@ -74,6 +75,14 @@ export function MobileMenu({
               >
                 <X size={18} strokeWidth={1.75} aria-hidden />
               </button>
+            </div>
+
+            <div className="px-6 pt-5">
+              <Button asChild variant="bronze" className="w-full">
+                <Link href="/contact#giving" onClick={onClose}>
+                  {t("common.donate")}
+                </Link>
+              </Button>
             </div>
 
             <ul className="flex flex-1 flex-col gap-1 overflow-y-auto px-4 py-6">

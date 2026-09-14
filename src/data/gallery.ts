@@ -127,14 +127,14 @@ export const GALLERY_IMAGES: Record<
   },
 };
 
-// Curated, full-resolution set used for the homepage hero slideshow only —
-// keep to images with enough native resolution for a full-bleed backdrop.
+// Curated set used for the homepage hero slideshow.
 export const HERO_IMAGE_IDS: GalleryImageId[] = [
+  "cbd-masjid-interior",
+  "roodepan-palms",
+  "mustafa-interior",
   "galeshewe-minaret",
-  "koffiefontein-exterior",
-  "britstown-interior",
-  "minaret-construction",
-  "britstown-exterior",
+  "hamza-exterior",
+  "cbd-masjid-facade",
 ];
 
 export const GALLERY_ORDER: GalleryImageId[] = [

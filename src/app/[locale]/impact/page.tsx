@@ -143,7 +143,13 @@ export default async function ImpactPage({
             className="mx-auto mb-14"
           />
           <MotionReveal className="mx-auto max-w-xl">
-            <ReachDiagram center={t("reach.center")} unit={t("reach.unit")} towns={diagramTowns} />
+            <ReachDiagram
+              center={t("reach.center")}
+              unit={t("reach.unit")}
+              towns={diagramTowns}
+              mapsHint={t("reach.mapsHint")}
+              mapsButtonLabel={t("reach.mapsButtonLabel")}
+            />
           </MotionReveal>
 
           <div className="mx-auto mt-16 grid max-w-3xl gap-10 sm:grid-cols-2">

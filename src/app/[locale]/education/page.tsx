@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { BookOpen } from "lucide-react";
+import { GraduationCap, Phone } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Container } from "@/components/Container";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -29,6 +29,7 @@ export default async function EducationPage({
 
   const t = await getTranslations("education");
   const tHome = await getTranslations("home");
+  const tContact = await getTranslations("contact.details");
   const introParagraphs = t.raw("intro.paragraphs") as string[];
   const socialWelfareParagraphs = t.raw("socialWelfare.paragraphs") as string[];
 
@@ -53,7 +54,7 @@ export default async function EducationPage({
             className="relative aspect-[4/5] overflow-hidden rounded-3xl lg:sticky lg:top-28"
           >
             <Image
-              src={assetPath("/images/gallery/minaret-construction.jpg")}
+              src={assetPath("/images/gallery/galeshewe-minaret.jpg")}
               alt=""
               fill
               sizes="(min-width: 1024px) 35vw, 90vw"
@@ -112,23 +113,43 @@ export default async function EducationPage({
             subtitle={t("future.body")}
             className="mx-auto mb-12"
           />
-          <div className="grid gap-5 sm:grid-cols-3">
-            {[0, 1, 2].map((n) => (
-              <MotionReveal
-                key={n}
-                delay={n * 0.08}
-                className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-ivory-50/25 bg-ivory-50/5 px-6 py-12 text-center"
+          <MotionReveal className="mx-auto max-w-xl rounded-2xl border border-ivory-50/15 bg-ivory-50/5 px-8 py-10 text-center">
+            <span
+              aria-hidden
+              className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full border border-bronze-300/60 text-bronze-300"
+            >
+              <GraduationCap size={20} strokeWidth={1.5} />
+            </span>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-bronze-300">
+              {t("future.admissions.label")}
+            </p>
+            <p className="mx-auto mt-2 max-w-sm text-balance leading-relaxed text-ivory-200">
+              {t("future.admissions.body")}
+            </p>
+            <div dir="ltr" className="mt-5 flex flex-col items-center gap-1.5 text-sm text-ivory-100">
+              <a
+                href="tel:+27828156786"
+                className="inline-flex items-center gap-2 transition-colors hover:text-bronze-300"
               >
-                <span
-                  aria-hidden
-                  className="flex h-12 w-12 items-center justify-center rounded-full border border-bronze-300/60 text-bronze-300"
-                >
-                  <BookOpen size={20} strokeWidth={1.5} />
-                </span>
-                <p className="text-sm font-medium text-ivory-100">{t("future.placeholderLabel")}</p>
-              </MotionReveal>
-            ))}
-          </div>
+                <Phone size={14} strokeWidth={1.75} aria-hidden />
+                {tContact("officePhone1")}
+              </a>
+              <a
+                href="tel:+27825189669"
+                className="inline-flex items-center gap-2 transition-colors hover:text-bronze-300"
+              >
+                <Phone size={14} strokeWidth={1.75} aria-hidden />
+                {tContact("officePhone2")}
+              </a>
+              <a
+                href="tel:+27722569288"
+                className="inline-flex items-center gap-2 transition-colors hover:text-bronze-300"
+              >
+                <Phone size={14} strokeWidth={1.75} aria-hidden />
+                {tContact("generalPhone")}
+              </a>
+            </div>
+          </MotionReveal>
         </Container>
       </section>
 
