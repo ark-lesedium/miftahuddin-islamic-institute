@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { GraduationCap, Phone } from "lucide-react";
+import {
+  GraduationCap,
+  Phone,
+  Users,
+  HeartHandshake,
+  Landmark,
+  BookOpen,
+} from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Container } from "@/components/Container";
 import { SectionHeading } from "@/components/SectionHeading";
-import { MotionReveal } from "@/components/MotionReveal";
+import { MotionReveal, MotionStagger } from "@/components/MotionReveal";
 import { PageHero } from "@/components/PageHero";
 import { CTA } from "@/components/CTA";
 import { assetPath } from "@/lib/asset-path";
@@ -32,6 +39,8 @@ export default async function EducationPage({
   const tContact = await getTranslations("contact.details");
   const introParagraphs = t.raw("intro.paragraphs") as string[];
   const socialWelfareParagraphs = t.raw("socialWelfare.paragraphs") as string[];
+  const centreServices = t.raw("centre.services") as string[];
+  const centreServiceIcons = [GraduationCap, Users, HeartHandshake, Landmark, BookOpen];
 
   return (
     <>
@@ -100,6 +109,53 @@ export default async function EducationPage({
               {t("beyondMakaatib.body")}
             </p>
           </MotionReveal>
+        </Container>
+      </section>
+
+      <section className="bg-ivory-50 py-24 sm:py-28">
+        <Container className="grid items-center gap-12 lg:grid-cols-2">
+          <MotionReveal
+            delay={0.1}
+            className="relative order-2 aspect-[4/5] overflow-hidden rounded-3xl lg:order-1"
+          >
+            <Image
+              src={assetPath("/images/gallery/haji-adams-centre-museum.jpg")}
+              alt=""
+              fill
+              sizes="(min-width: 1024px) 40vw, 90vw"
+              className="object-cover"
+            />
+          </MotionReveal>
+          <div className="order-1 lg:order-2">
+            <MotionReveal>
+              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-bronze-600">
+                {t("centre.kicker")}
+              </p>
+              <h2 className="text-balance font-serif text-3xl text-ink-900 sm:text-4xl">
+                {t("centre.title")}
+              </h2>
+              <p className="mt-2 text-sm font-medium text-bronze-600">{t("centre.subtitle")}</p>
+              <p className="mt-5 text-balance text-lg leading-relaxed text-ink-500">
+                {t("centre.body")}
+              </p>
+            </MotionReveal>
+            <MotionStagger className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3">
+              {centreServices.map((service, i) => {
+                const Icon = centreServiceIcons[i] ?? GraduationCap;
+                return (
+                  <MotionReveal
+                    key={service}
+                    className="flex flex-col items-center gap-2 rounded-2xl border border-bronze-200/70 bg-bronze-50/40 px-3 py-5 text-center"
+                  >
+                    <Icon size={20} strokeWidth={1.5} className="text-teal-700" aria-hidden />
+                    <span className="text-xs font-medium leading-tight text-ink-700">
+                      {service}
+                    </span>
+                  </MotionReveal>
+                );
+              })}
+            </MotionStagger>
+          </div>
         </Container>
       </section>
 

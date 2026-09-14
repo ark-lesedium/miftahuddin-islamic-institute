@@ -420,6 +420,44 @@ export default async function HomePage({
         </Container>
       </section>
 
+      {/* Centre preview */}
+      <section className="bg-ivory-50 py-24 sm:py-28">
+        <Container className="grid items-center gap-12 lg:grid-cols-2">
+          <MotionReveal
+            delay={0.1}
+            className="relative aspect-[4/5] overflow-hidden rounded-3xl"
+          >
+            <Image
+              src={assetPath("/images/gallery/haji-adams-centre-facade.jpg")}
+              alt=""
+              fill
+              sizes="(min-width: 1024px) 40vw, 90vw"
+              className="object-cover"
+            />
+          </MotionReveal>
+          <MotionReveal>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-bronze-600">
+              {t("home.centrePreview.kicker")}
+            </p>
+            <h2 className="text-balance font-serif text-3xl text-ink-900 sm:text-4xl">
+              {t("home.centrePreview.title")}
+            </h2>
+            <p className="mt-5 text-balance text-lg leading-relaxed text-ink-500">
+              {t("home.centrePreview.body")}
+            </p>
+            <Link
+              href="/education"
+              className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-teal-700 hover:text-teal-800"
+            >
+              {t("home.centrePreview.cta")}
+              <span aria-hidden className="rtl:rotate-180">
+                &rarr;
+              </span>
+            </Link>
+          </MotionReveal>
+        </Container>
+      </section>
+
       {/* CTA */}
       <CTA
         title={t("home.cta.title")}

@@ -17,7 +17,10 @@ export type GalleryImageId =
   | "hamza-interior"
   | "mustafa-exterior"
   | "mustafa-interior"
-  | "ritchie-exterior";
+  | "ritchie-exterior"
+  | "haji-adams-centre-facade"
+  | "haji-adams-centre-museum"
+  | "haji-adams-centre-signage";
 
 export const GALLERY_IMAGES: Record<
   GalleryImageId,
@@ -125,6 +128,24 @@ export const GALLERY_IMAGES: Record<
     height: 382,
     span: "normal",
   },
+  "haji-adams-centre-facade": {
+    src: assetPath("/images/gallery/haji-adams-centre-facade.jpg"),
+    width: 1800,
+    height: 1351,
+    span: "wide",
+  },
+  "haji-adams-centre-museum": {
+    src: assetPath("/images/gallery/haji-adams-centre-museum.jpg"),
+    width: 1800,
+    height: 1351,
+    span: "normal",
+  },
+  "haji-adams-centre-signage": {
+    src: assetPath("/images/gallery/haji-adams-centre-signage.jpg"),
+    width: 1800,
+    height: 1351,
+    span: "normal",
+  },
 };
 
 // Curated set used for the homepage hero slideshow.
@@ -155,4 +176,7 @@ export const GALLERY_ORDER: GalleryImageId[] = [
   "roodepan-interior",
   "ritchie-exterior",
   "cbd-masjid-street",
+  "haji-adams-centre-facade",
+  "haji-adams-centre-museum",
+  "haji-adams-centre-signage",
 ];

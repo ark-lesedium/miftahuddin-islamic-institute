@@ -103,6 +103,12 @@
       "body": "Ramadhaan and Qurbani feeding schemes, bursaries for students, hostels for the vulnerable, assistance to orphans and travellers, and a dedicated Prison Board — Miftahuddin's welfare work touches lives well beyond the Masjid.",
       "cta": "See Our Community Work"
     },
+    "centrePreview": {
+      "kicker": "Our Campus",
+      "title": "Haji Abdusalaam Adams Islamic Centre",
+      "body": "A dedicated campus in Kimberley bringing together our Hifz Madrasah, adult classes, poverty alleviation efforts, and the Darul 'Ajaaib Islamic Museum with its Islamic library — all under one roof.",
+      "cta": "Learn More About the Centre"
+    },
     "newsPreview": {
       "kicker": "News & Updates",
       "title": "From the Institute",
@@ -261,6 +267,19 @@
     "beyondMakaatib": {
       "title": "Beyond the Makaatib",
       "body": "Miftahuddin also sponsors students studying in various local Madrasahs — assisting with travel, clothing and meals — as well as students pursuing advanced Islamic scholarship in Darul Ulooms and other institutes of learning. Aid has also been extended to underprivileged students pursuing a secular course of their choice, and feeding schemes ensure that no child attending our Maktab goes hungry."
+    },
+    "centre": {
+      "kicker": "Kimberley",
+      "title": "Haji Abdusalaam Adams Islamic Centre",
+      "subtitle": "Islamic Educational & Social Centre — Boeta Doesi Rahimahullah",
+      "body": "This Kimberley campus brings several of Miftahuddin's core services together under one roof — a Hifz Madrasah, adult classes and poverty alleviation, alongside the Darul 'Ajaaib Islamic Museum and its Islamic library, maintained, Alhamdulillah, as a source of Da'wah to visitors.",
+      "services": [
+        "Hifz Madrasah",
+        "Adult Classes",
+        "Poverty Alleviation",
+        "Islamic Museum",
+        "Islamic Library"
+      ]
     },
     "future": {
       "kicker": "Programmes",
@@ -513,7 +532,10 @@
       { "id": "roodepan-interior", "title": "Prayer Hall, Roodepan Masjid", "location": "Roodepan, Kimberley" },
       { "id": "hamza-exterior", "title": "Masjid Hamza", "location": "Victoria West, Northern Cape" },
       { "id": "hamza-interior", "title": "Prayer Hall, Masjid Hamza", "location": "Victoria West, Northern Cape" },
-      { "id": "ritchie-exterior", "title": "Musallah Mu'az bin Jabal", "location": "Ritchie, Northern Cape" }
+      { "id": "ritchie-exterior", "title": "Musallah Mu'az bin Jabal", "location": "Ritchie, Northern Cape" },
+      { "id": "haji-adams-centre-facade", "title": "Haji Abdusalaam Adams Islamic Centre", "location": "Kimberley, Northern Cape" },
+      { "id": "haji-adams-centre-museum", "title": "Darul 'Ajaaib Islamic Museum", "location": "Kimberley, Northern Cape" },
+      { "id": "haji-adams-centre-signage", "title": "Hifz Madrasah, Adult Classes & Poverty Alleviation", "location": "Kimberley, Northern Cape" }
     ],
     "empty": {
       "title": "More Photographs Coming Soon",
