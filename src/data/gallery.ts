@@ -158,7 +158,6 @@ export const GALLERY_IMAGES: Record<
 // Curated set used for the homepage hero slideshow.
 export const HERO_IMAGE_IDS: GalleryImageId[] = [
   "haji-adams-centre-facade",
-  "roodepan-street",
   "cbd-masjid-interior",
 ];
 
