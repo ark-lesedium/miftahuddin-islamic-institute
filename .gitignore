@@ -41,8 +41,10 @@ yarn-error.log*
 next-env.d.ts
 
 # Source materials supplied for content extraction (raw Annual Report, original
-# logo file) — not needed to build or run the site, and the Annual Report
-# contains internal/financial correspondence not meant for a public repo.
+# logo file, raw masjid/project photos) — not needed to build or run the site.
+# The Annual Report contains internal/financial correspondence not meant for a
+# public repo, and the raw photos are full-size WhatsApp/camera exports.
 # Processed assets actually used by the site live under public/images/.
 /Documents/
 /logo.jpeg
+/images/

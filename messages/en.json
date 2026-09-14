@@ -116,6 +116,49 @@
     "contactPreview": {
       "kicker": "Visit or Reach Us",
       "title": "We Would Love to Hear From You"
+    },
+    "quranQuotes": {
+      "kicker": "From the Noble Qur'an",
+      "title": "The Foundations of Our Work",
+      "note": "Translations are provided for reflection and general understanding; please refer to the Mus'haf, and a qualified Aalim, for the authoritative Arabic text.",
+      "items": [
+        {
+          "theme": "Ta'leem",
+          "text": "Recite in the name of your Lord who created.",
+          "secondary": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ",
+          "reference": "Surah Al-'Alaq 96:1"
+        },
+        {
+          "theme": "Ta'leem",
+          "text": "My Lord, increase me in knowledge.",
+          "secondary": "وَقُل رَّبِّ زِدْنِي عِلْمًا",
+          "reference": "Surah Ta-Ha 20:114"
+        },
+        {
+          "theme": "Social Welfare",
+          "text": "And they give food, in spite of love for it, to the needy, the orphan and the captive.",
+          "secondary": "وَيُطْعِمُونَ الطَّعَامَ عَلَىٰ حُبِّهِ مِسْكِينًا وَيَتِيمًا وَأَسِيرًا",
+          "reference": "Surah Al-Insan 76:8"
+        },
+        {
+          "theme": "Social Welfare",
+          "text": "The example of those who spend their wealth in the way of Allah is like a seed which grows seven spikes; in each spike is a hundred grains. And Allah multiplies the reward for whom He wills.",
+          "secondary": "مَثَلُ الَّذِينَ يُنفِقُونَ أَمْوَالَهُمْ فِي سَبِيلِ اللَّهِ كَمَثَلِ حَبَّةٍ أَنبَتَتْ سَبْعَ سَنَابِلَ فِي كُلِّ سُنبُلَةٍ مِّائَةُ حَبَّةٍ",
+          "reference": "Surah Al-Baqarah 2:261"
+        },
+        {
+          "theme": "Tableegh",
+          "text": "Invite to the way of your Lord with wisdom and good instruction, and argue with them in a way that is best.",
+          "secondary": "ادْعُ إِلَىٰ سَبِيلِ رَبِّكَ بِالْحِكْمَةِ وَالْمَوْعِظَةِ الْحَسَنَةِ",
+          "reference": "Surah An-Nahl 16:125"
+        },
+        {
+          "theme": "Tableegh",
+          "text": "Let there be among you a group that invites to what is good, enjoins what is right and forbids what is wrong — it is they who are successful.",
+          "secondary": "وَلْتَكُن مِّنكُمْ أُمَّةٌ يَدْعُونَ إِلَى الْخَيْرِ وَيَأْمُرُونَ بِالْمَعْرُوفِ وَيَنْهَوْنَ عَنِ الْمُنكَرِ",
+          "reference": "Surah Aal-e-Imran 3:104"
+        }
+      ]
     }
   },
   "about": {
@@ -395,12 +438,21 @@
       "title": "From the Institute",
       "subtitle": "Announcements, project updates and stories from across the Miftahuddin network."
     },
+    "liveBadge": "Now Open",
     "items": [
       {
         "id": "cbd-masjid",
         "title": "A New Masjid for Kimberley's CBD",
         "summary": "A church was bought, Alhamdulillah, with the help of generous donors. Salaah has already started, with a dedicated Imam.",
-        "body": "A church was bought, Alhamdulillah, with the help of generous donors. Salaah has already started, with a dedicated Imam. It is not yet 100% completed, as we are still waiting for the arrival of Musallahs. The Masjid is here to service the broader CBD area and the broader community of Kimberley."
+        "body": "A historic church in the heart of Kimberley's CBD has been transformed into a Masjid, Alhamdulillah, with the help of generous donors. Its soaring wooden-beamed roof and stained-glass windows now frame a new mihrab, set beneath geometric Islamic pattern-work and calligraphy. Salaah has already started, with a dedicated Imam, though the Masjid is not yet 100% complete — we are still waiting for the arrival of Musallahs. It is here to service the broader CBD area and the wider community of Kimberley.",
+        "image": "cbd-masjid-facade",
+        "live": true,
+        "marquee": [
+          "Now open in Kimberley's CBD",
+          "Join us for Salaah — everyone is welcome",
+          "Musallahs are still needed to finish the Masjid",
+          "A former church, reborn as a house of Allah"
+        ]
       }
     ],
     "empty": {
@@ -416,11 +468,23 @@
       "subtitle": "Photographs from Miftahuddin's Masaajid, Madaaris and building projects across Kimberley, the Northern Cape and the Free State."
     },
     "items": [
+      { "id": "cbd-masjid-facade", "title": "Masjid, Kimberley CBD", "location": "Kimberley CBD, Northern Cape" },
+      { "id": "cbd-masjid-interior", "title": "Prayer Hall Under Restoration", "location": "Kimberley CBD, Northern Cape" },
+      { "id": "cbd-masjid-signage", "title": "A Former Church, Now a Masjid", "location": "Kimberley CBD, Northern Cape" },
+      { "id": "cbd-masjid-street", "title": "On Kimberley's Main Street", "location": "Kimberley CBD, Northern Cape" },
       { "id": "minaret-construction", "title": "Minaret Under Construction", "location": "Kimberley, Northern Cape" },
       { "id": "galeshewe-minaret", "title": "Masjid Bibi Aa'ishah", "location": "Galeshewe, Kimberley" },
       { "id": "koffiefontein-exterior", "title": "Masjid Muhammad Mustafa ﷺ", "location": "Koffiefontein, Free State" },
+      { "id": "mustafa-exterior", "title": "Entrance Gate, Masjid Muhammad Mustafa ﷺ", "location": "Koffiefontein, Free State" },
+      { "id": "mustafa-interior", "title": "Prayer Hall, Masjid Muhammad Mustafa ﷺ", "location": "Koffiefontein, Free State" },
       { "id": "britstown-interior", "title": "Prayer Hall, Masjid Sa'eed bin Zayd", "location": "Britstown, Northern Cape" },
-      { "id": "britstown-exterior", "title": "A Former Church, Reborn as a Masjid", "location": "Britstown, Northern Cape" }
+      { "id": "britstown-exterior", "title": "A Former Church, Reborn as a Masjid", "location": "Britstown, Northern Cape" },
+      { "id": "roodepan-palms", "title": "Roodepan Masjid", "location": "Roodepan, Kimberley" },
+      { "id": "roodepan-sunset", "title": "Roodepan Masjid at Sunset", "location": "Roodepan, Kimberley" },
+      { "id": "roodepan-interior", "title": "Prayer Hall, Roodepan Masjid", "location": "Roodepan, Kimberley" },
+      { "id": "hamza-exterior", "title": "Masjid Hamza", "location": "Victoria West, Northern Cape" },
+      { "id": "hamza-interior", "title": "Prayer Hall, Masjid Hamza", "location": "Victoria West, Northern Cape" },
+      { "id": "ritchie-exterior", "title": "Musallah Mu'az bin Jabal", "location": "Ritchie, Northern Cape" }
     ],
     "empty": {
       "title": "More Photographs Coming Soon",

@@ -13,10 +13,11 @@ import { CTA } from "@/components/CTA";
 import { HeroSlideshow } from "@/components/HeroSlideshow";
 import { NewsSlideshow } from "@/components/NewsSlideshow";
 import { ReachDiagram } from "@/components/ReachDiagram";
+import { QuranQuotes } from "@/components/QuranQuotes";
 import { assetPath } from "@/lib/asset-path";
-import { GALLERY_IMAGES, GALLERY_ORDER } from "@/data/gallery";
+import { GALLERY_IMAGES, HERO_IMAGE_IDS, type GalleryImageId } from "@/data/gallery";
 
-const HERO_IMAGES = GALLERY_ORDER.map((id) => GALLERY_IMAGES[id].src);
+const HERO_IMAGES = HERO_IMAGE_IDS.map((id) => GALLERY_IMAGES[id].src);
 
 export async function generateMetadata({
   params,
@@ -48,7 +49,20 @@ export default async function HomePage({
     label: string;
     description: string;
   }[];
-  const newsItems = t.raw("news.items") as { id: string; title: string; summary: string }[];
+  const quranQuotes = t.raw("home.quranQuotes.items") as {
+    theme: string;
+    text: string;
+    secondary?: string;
+    reference: string;
+  }[];
+  const newsItems = t.raw("news.items") as {
+    id: string;
+    title: string;
+    summary: string;
+    image?: GalleryImageId;
+    live?: boolean;
+    marquee?: string[];
+  }[];
   const diagramTowns = t.raw("impact.reach.diagramTowns") as { name: string; km: number }[];
 
   return (
@@ -179,8 +193,24 @@ export default async function HomePage({
         </Container>
       </section>
 
-      {/* Educational Journey */}
+      {/* Qur'an Quotes */}
       <section className="bg-ivory-50 py-24 sm:py-28">
+        <Container>
+          <SectionHeading
+            align="center"
+            kicker={t("home.quranQuotes.kicker")}
+            title={t("home.quranQuotes.title")}
+            className="mx-auto mb-4"
+          />
+          <p className="mx-auto mb-12 max-w-xl text-balance text-center text-sm text-ink-500">
+            {t("home.quranQuotes.note")}
+          </p>
+          <QuranQuotes items={quranQuotes} />
+        </Container>
+      </section>
+
+      {/* Educational Journey */}
+      <section className="bg-bronze-50/60 py-24 sm:py-28">
         <Container className="grid items-center gap-12 lg:grid-cols-2">
           <MotionReveal>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-bronze-600">
@@ -215,7 +245,7 @@ export default async function HomePage({
       </section>
 
       {/* Total students */}
-      <section className="bg-bronze-50/60 py-16 sm:py-20">
+      <section className="bg-ivory-50 py-16 sm:py-20">
         <Container className="max-w-2xl text-center">
           <MotionReveal>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-bronze-600">

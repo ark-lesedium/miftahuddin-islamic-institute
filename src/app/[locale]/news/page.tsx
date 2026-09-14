@@ -4,6 +4,7 @@ import { Container } from "@/components/Container";
 import { PageHero } from "@/components/PageHero";
 import { MotionReveal } from "@/components/MotionReveal";
 import { NewsSlideshow } from "@/components/NewsSlideshow";
+import type { GalleryImageId } from "@/data/gallery";
 
 export async function generateMetadata({
   params,
@@ -24,7 +25,15 @@ export default async function NewsPage({
   setRequestLocale(locale);
 
   const t = await getTranslations("news");
-  const items = t.raw("items") as { id: string; title: string; summary: string }[];
+  const items = t.raw("items") as {
+    id: string;
+    title: string;
+    summary: string;
+    body?: string;
+    image?: GalleryImageId;
+    live?: boolean;
+    marquee?: string[];
+  }[];
 
   return (
     <>
@@ -32,7 +41,7 @@ export default async function NewsPage({
 
       <section className="bg-ivory-50 py-24 sm:py-28">
         <Container className="max-w-3xl">
-          <NewsSlideshow items={items} />
+          <NewsSlideshow items={items} expanded />
           <MotionReveal className="mt-10 text-center text-sm text-ink-500">
             <p>{t("empty.body")}</p>
           </MotionReveal>

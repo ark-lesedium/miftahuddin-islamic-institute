@@ -5,7 +5,19 @@ export type GalleryImageId =
   | "galeshewe-minaret"
   | "koffiefontein-exterior"
   | "britstown-interior"
-  | "britstown-exterior";
+  | "britstown-exterior"
+  | "cbd-masjid-facade"
+  | "cbd-masjid-interior"
+  | "cbd-masjid-signage"
+  | "cbd-masjid-street"
+  | "roodepan-palms"
+  | "roodepan-sunset"
+  | "roodepan-interior"
+  | "hamza-exterior"
+  | "hamza-interior"
+  | "mustafa-exterior"
+  | "mustafa-interior"
+  | "ritchie-exterior";
 
 export const GALLERY_IMAGES: Record<
   GalleryImageId,
@@ -41,12 +53,106 @@ export const GALLERY_IMAGES: Record<
     height: 1800,
     span: "normal",
   },
+  "cbd-masjid-facade": {
+    src: assetPath("/images/gallery/cbd-masjid-facade.jpg"),
+    width: 900,
+    height: 1600,
+    span: "tall",
+  },
+  "cbd-masjid-interior": {
+    src: assetPath("/images/gallery/cbd-masjid-interior.jpg"),
+    width: 1600,
+    height: 900,
+    span: "wide",
+  },
+  "cbd-masjid-signage": {
+    src: assetPath("/images/gallery/cbd-masjid-signage.jpg"),
+    width: 900,
+    height: 1600,
+    span: "normal",
+  },
+  "cbd-masjid-street": {
+    src: assetPath("/images/gallery/cbd-masjid-street.jpg"),
+    width: 900,
+    height: 1600,
+    span: "normal",
+  },
+  "roodepan-palms": {
+    src: assetPath("/images/gallery/roodepan-palms.jpg"),
+    width: 680,
+    height: 510,
+    span: "wide",
+  },
+  "roodepan-sunset": {
+    src: assetPath("/images/gallery/roodepan-sunset.jpg"),
+    width: 680,
+    height: 510,
+    span: "normal",
+  },
+  "roodepan-interior": {
+    src: assetPath("/images/gallery/roodepan-interior.jpg"),
+    width: 680,
+    height: 510,
+    span: "normal",
+  },
+  "hamza-exterior": {
+    src: assetPath("/images/gallery/hamza-exterior.jpg"),
+    width: 680,
+    height: 510,
+    span: "normal",
+  },
+  "hamza-interior": {
+    src: assetPath("/images/gallery/hamza-interior.jpg"),
+    width: 680,
+    height: 331,
+    span: "normal",
+  },
+  "mustafa-exterior": {
+    src: assetPath("/images/gallery/mustafa-exterior.jpg"),
+    width: 382,
+    height: 510,
+    span: "normal",
+  },
+  "mustafa-interior": {
+    src: assetPath("/images/gallery/mustafa-interior.jpg"),
+    width: 680,
+    height: 510,
+    span: "normal",
+  },
+  "ritchie-exterior": {
+    src: assetPath("/images/gallery/ritchie-exterior.jpg"),
+    width: 680,
+    height: 382,
+    span: "normal",
+  },
 };
 
-export const GALLERY_ORDER: GalleryImageId[] = [
+// Curated, full-resolution set used for the homepage hero slideshow only —
+// keep to images with enough native resolution for a full-bleed backdrop.
+export const HERO_IMAGE_IDS: GalleryImageId[] = [
   "galeshewe-minaret",
   "koffiefontein-exterior",
   "britstown-interior",
   "minaret-construction",
   "britstown-exterior",
+];
+
+export const GALLERY_ORDER: GalleryImageId[] = [
+  "cbd-masjid-facade",
+  "cbd-masjid-interior",
+  "roodepan-palms",
+  "galeshewe-minaret",
+  "mustafa-interior",
+  "koffiefontein-exterior",
+  "hamza-interior",
+  "britstown-interior",
+  "roodepan-sunset",
+  "cbd-masjid-signage",
+  "minaret-construction",
+  "mustafa-exterior",
+  "britstown-exterior",
+  "hamza-exterior",
+  "roodepan-interior",
+  "ritchie-exterior",
+  "cbd-masjid-street",
 ];

@@ -46,7 +46,7 @@ export function GalleryGrid({ items }: { items: Item[] }) {
 
   return (
     <>
-      <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4 md:auto-rows-[14rem]">
+      <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4 md:auto-rows-[14rem] md:grid-flow-dense">
         {ordered.map((item, index) => {
           const meta = GALLERY_IMAGES[item.id];
           const spanClass =
