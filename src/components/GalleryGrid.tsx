@@ -4,7 +4,6 @@ import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useTranslations } from "next-intl";
 import { GALLERY_IMAGES, GALLERY_ORDER, type GalleryImageId } from "@/data/gallery";
 import { MotionReveal } from "./MotionReveal";
 import { cn } from "@/lib/utils";
@@ -12,7 +11,6 @@ import { cn } from "@/lib/utils";
 type Item = { id: GalleryImageId; title: string; location: string };
 
 export function GalleryGrid({ items }: { items: Item[] }) {
-  const t = useTranslations("gallery.empty");
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const close = useCallback(() => setActiveIndex(null), []);
@@ -87,19 +85,6 @@ export function GalleryGrid({ items }: { items: Item[] }) {
             </MotionReveal>
           );
         })}
-
-        {[0, 1].map((n) => (
-          <MotionReveal
-            key={`placeholder-${n}`}
-            delay={(ordered.length + n) * 0.05}
-            className="pattern-geometric flex aspect-[3/4] flex-col items-center justify-center gap-2 rounded-2xl border border-dashed border-bronze-300 bg-bronze-50/60 p-6 text-center md:aspect-auto"
-          >
-            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-bronze-500">
-              {t("title")}
-            </span>
-            <span className="text-sm text-ink-500">{t("body")}</span>
-          </MotionReveal>
-        ))}
       </div>
 
       <AnimatePresence>

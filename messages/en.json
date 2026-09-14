@@ -456,15 +456,16 @@
       {
         "id": "cbd-masjid",
         "title": "A New Masjid for Kimberley's CBD",
-        "summary": "A church was bought, Alhamdulillah, with the help of generous donors. Salaah has already started, with a dedicated Imam.",
-        "body": "A historic church in the heart of Kimberley's CBD has been transformed into a Masjid, Alhamdulillah, with the help of generous donors. Its soaring wooden-beamed roof and stained-glass windows now frame a new mihrab, set beneath geometric Islamic pattern-work and calligraphy. Salaah has already started, with a dedicated Imam, though the Masjid is not yet 100% complete — we are still waiting for the arrival of Musallahs. It is here to service the broader CBD area and the wider community of Kimberley.",
+        "summary": "A church was bought, Alhamdulillah, with the help of generous donors, and Salaah has started with a dedicated Imam — though the Masjid is not yet open to the public.",
+        "body": "A historic church in the heart of Kimberley's CBD has been transformed into a Masjid, Alhamdulillah, with the help of generous donors. Its soaring wooden-beamed roof and stained-glass windows now frame a new mihrab, set beneath geometric Islamic pattern-work and calligraphy. Salaah has started with a dedicated Imam, but the Masjid is not yet complete or open to the public — we are still waiting for the arrival of Musallahs and finishing the remaining work. It will serve the broader CBD area and the wider community of Kimberley once ready.",
         "image": "cbd-masjid-facade",
         "live": true,
+        "badgeLabel": "Opening Soon",
         "marquee": [
-          "Now open in Kimberley's CBD",
-          "Join us for Salaah — everyone is welcome",
+          "A former church, reborn as a house of Allah",
+          "Not yet open to the public — renovations continuing",
           "Musallahs are still needed to finish the Masjid",
-          "A former church, reborn as a house of Allah"
+          "Help us complete the project"
         ]
       },
       {
@@ -605,7 +606,7 @@
     },
     "leadershipMessage": {
       "kicker": "A Word From Our Leadership",
-      "body": "This report was prepared for your information, so that you may know where and how your contributions were utilised, and thus assess your investment for the Aakhirah. May Allah Ta'ala accept your contributions, and grant you manifold returns in this life and the Hereafter.",
+      "body": "This website was prepared for your information, so that you may know where and how your contributions were utilised, and thus assess your investment for the Aakhirah. May Allah Ta'ala accept your contributions, and grant you manifold returns in this life and the Hereafter.",
       "attribution": "Moulana M.E. Jeena"
     },
     "map": {
