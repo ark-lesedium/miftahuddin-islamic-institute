@@ -147,25 +147,45 @@ export default async function HomePage({
           <div className="grid gap-6 lg:grid-cols-2 lg:items-stretch">
             <NewsSlideshow items={newsItems} />
 
-            <MotionReveal className="overflow-hidden rounded-3xl border border-bronze-200/70 bg-ivory-50 shadow-sm">
+            <MotionReveal className="flex h-full flex-col overflow-hidden rounded-3xl border border-bronze-200/70 bg-ivory-50 shadow-sm">
+              <div className="px-8 pt-8 sm:px-12 sm:pt-10">
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-bronze-600">
+                  {t("home.currentProjects.kicker")}
+                </p>
+              </div>
               <a
                 href="https://thelemonproject.co.za/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative block aspect-[4/5] w-full sm:aspect-[3/4]"
+                className="group mt-4 block px-8 sm:px-12"
               >
-                <Image
-                  src={assetPath("/images/projects/lemon-project.jpg")}
-                  alt={t("home.currentProjects.imageAlt")}
-                  fill
-                  sizes="(min-width: 1024px) 40vw, 100vw"
-                  className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                />
-                <span className="absolute start-4 top-4 rounded-full bg-ink-900/80 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-ivory-50 backdrop-blur-sm">
-                  {t("home.currentProjects.kicker")}
-                </span>
+                <div
+                  dir="ltr"
+                  className="overflow-hidden rounded-xl border border-ink-900/10 bg-ink-900 shadow-md"
+                >
+                  <div className="flex items-center gap-1.5 bg-ink-800 px-3 py-2">
+                    <span className="h-2 w-2 rounded-full bg-[#ff5f57]" />
+                    <span className="h-2 w-2 rounded-full bg-[#febc2e]" />
+                    <span className="h-2 w-2 rounded-full bg-[#28c840]" />
+                    <div className="ms-2 flex-1 truncate rounded-full bg-ink-900/60 px-3 py-1 text-center text-[0.65rem] text-ivory-300">
+                      thelemonproject.co.za
+                    </div>
+                  </div>
+                  <div
+                    className="relative w-full overflow-hidden"
+                    style={{ aspectRatio: "1400 / 660" }}
+                  >
+                    <Image
+                      src={assetPath("/images/projects/lemon-project.jpg")}
+                      alt={t("home.currentProjects.imageAlt")}
+                      fill
+                      sizes="(min-width: 1024px) 40vw, 100vw"
+                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                </div>
               </a>
-              <div className="px-8 py-10 sm:px-12 sm:py-12">
+              <div className="flex flex-1 flex-col justify-center px-8 py-8 sm:px-12 sm:py-10">
                 <h3 className="font-serif text-2xl text-ink-900 sm:text-3xl">
                   {t("home.currentProjects.title")}
                 </h3>
@@ -425,14 +445,14 @@ export default async function HomePage({
         <Container className="grid items-center gap-12 lg:grid-cols-2">
           <MotionReveal
             delay={0.1}
-            className="relative aspect-[4/5] overflow-hidden rounded-3xl"
+            className="relative aspect-[1800/1351] overflow-hidden rounded-3xl"
           >
             <Image
-              src={assetPath("/images/gallery/haji-adams-centre-facade.jpg")}
+              src={assetPath("/images/gallery/haji-adams-centre-signage.jpg")}
               alt=""
               fill
               sizes="(min-width: 1024px) 40vw, 90vw"
-              className="object-cover"
+              className="object-contain"
             />
           </MotionReveal>
           <MotionReveal>
