@@ -49,9 +49,9 @@ export function NewsSlideshow({
 
   return (
     <div className="overflow-hidden rounded-3xl border border-bronze-200/70 bg-ivory-50 shadow-sm">
-      <div className={image ? "grid lg:grid-cols-2" : ""}>
+      <div>
         {image ? (
-          <div className="relative min-h-[240px] lg:min-h-[360px]">
+          <div className="relative aspect-[4/5] w-full sm:aspect-[3/4]">
             <AnimatePresence mode="wait">
               <motion.div
                 key={item.id}
@@ -65,7 +65,7 @@ export function NewsSlideshow({
                   src={image.src}
                   alt={item.title}
                   fill
-                  sizes="(min-width: 1024px) 50vw, 100vw"
+                  sizes="(min-width: 1024px) 40vw, 100vw"
                   className={
                     item.imagePosition === "bottom" ? "object-cover object-bottom" : "object-cover"
                   }
@@ -100,7 +100,7 @@ export function NewsSlideshow({
               transition={{ duration: shouldReduceMotion ? 0.01 : 0.4 }}
             >
               <h3 className="font-serif text-2xl text-ink-900 sm:text-3xl">{item.title}</h3>
-              <p className="mt-3 max-w-2xl text-balance leading-relaxed text-ink-500">{text}</p>
+              <p className="mt-3 text-balance leading-relaxed text-ink-500">{text}</p>
             </motion.div>
           </AnimatePresence>
 

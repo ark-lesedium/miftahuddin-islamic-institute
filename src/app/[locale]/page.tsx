@@ -74,11 +74,19 @@ export default async function HomePage({
         <HeroSlideshow images={HERO_IMAGES} />
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 bg-ink-900/72 pattern-geometric-light"
+          className="pointer-events-none absolute inset-0 opacity-40 pattern-geometric-light"
         />
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink-900/25 via-ink-900/35 to-ink-900"
+          className="pointer-events-none absolute inset-0"
+          style={{
+            backgroundImage:
+              "radial-gradient(ellipse 65% 55% at 50% 45%, rgba(30,27,22,0.62) 0%, rgba(30,27,22,0.32) 45%, rgba(30,27,22,0.05) 75%)",
+          }}
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-ink-900/10 to-ink-900"
         />
         <Container className="relative flex min-h-[86vh] flex-col items-center justify-center gap-10 py-28 text-center sm:min-h-[92vh]">
           <MotionReveal className="flex flex-col items-center">
@@ -92,19 +100,19 @@ export default async function HomePage({
                 className="h-full w-auto"
               />
             </span>
-            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.28em] text-bronze-300 sm:text-sm">
+            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.28em] text-bronze-300 [text-shadow:0_1px_12px_rgb(0_0_0_/_60%)] sm:text-sm">
               {t("home.hero.kicker")}
             </p>
-            <h1 className="text-balance font-serif text-4xl font-medium text-ivory-50 sm:text-6xl md:text-7xl">
+            <h1 className="text-balance font-serif text-4xl font-medium text-ivory-50 [text-shadow:0_2px_24px_rgb(0_0_0_/_55%)] sm:text-6xl md:text-7xl">
               {t("home.hero.title")}
             </h1>
             <div className="mt-5 flex items-center justify-center gap-3">
               <KeyMark className="h-6 w-auto text-bronze-400 sm:h-7" />
-              <p className="text-balance font-serif text-xl italic text-bronze-200 sm:text-2xl">
+              <p className="text-balance font-serif text-xl italic text-bronze-200 [text-shadow:0_1px_16px_rgb(0_0_0_/_60%)] sm:text-2xl">
                 {t("home.hero.headline")}
               </p>
             </div>
-            <p className="mx-auto mt-6 max-w-xl text-balance text-base leading-relaxed text-ivory-200 sm:text-lg">
+            <p className="mx-auto mt-6 max-w-xl text-balance text-base leading-relaxed text-ivory-200 [text-shadow:0_1px_12px_rgb(0_0_0_/_55%)] sm:text-lg">
               {t("home.hero.subtitle")}
             </p>
           </MotionReveal>
@@ -129,14 +137,55 @@ export default async function HomePage({
 
       {/* News — kept at the top of the homepage so recent updates are the first thing visitors see */}
       <section className="bg-bronze-50/60 py-20 sm:py-24">
-        <Container className="max-w-3xl">
+        <Container className="max-w-5xl">
           <SectionHeading
             align="center"
             kicker={t("home.newsPreview.kicker")}
             title={t("home.newsPreview.title")}
             className="mx-auto mb-10"
           />
-          <NewsSlideshow items={newsItems} />
+          <div className="grid gap-6 lg:grid-cols-2 lg:items-stretch">
+            <NewsSlideshow items={newsItems} />
+
+            <MotionReveal className="overflow-hidden rounded-3xl border border-bronze-200/70 bg-ivory-50 shadow-sm">
+              <a
+                href="https://thelemonproject.co.za/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative block aspect-[4/5] w-full sm:aspect-[3/4]"
+              >
+                <Image
+                  src={assetPath("/images/projects/lemon-project.jpg")}
+                  alt={t("home.currentProjects.imageAlt")}
+                  fill
+                  sizes="(min-width: 1024px) 40vw, 100vw"
+                  className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                />
+                <span className="absolute start-4 top-4 rounded-full bg-ink-900/80 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-ivory-50 backdrop-blur-sm">
+                  {t("home.currentProjects.kicker")}
+                </span>
+              </a>
+              <div className="px-8 py-10 sm:px-12 sm:py-12">
+                <h3 className="font-serif text-2xl text-ink-900 sm:text-3xl">
+                  {t("home.currentProjects.title")}
+                </h3>
+                <p className="mt-3 text-balance leading-relaxed text-ink-500">
+                  {t("home.currentProjects.body")}
+                </p>
+                <a
+                  href="https://thelemonproject.co.za/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-teal-700 hover:text-teal-800"
+                >
+                  {t("home.currentProjects.cta")}
+                  <span aria-hidden className="rtl:rotate-180">
+                    &rarr;
+                  </span>
+                </a>
+              </div>
+            </MotionReveal>
+          </div>
           <MotionReveal className="mt-8 text-center">
             <Link
               href="/news"
@@ -367,51 +416,6 @@ export default async function HomePage({
                 &rarr;
               </span>
             </Link>
-          </MotionReveal>
-        </Container>
-      </section>
-
-      {/* Current Projects — The Lemon Project */}
-      <section className="bg-ivory-50 py-24 sm:py-28">
-        <Container className="grid items-center gap-12 lg:grid-cols-2">
-          <MotionReveal>
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-bronze-600">
-              {t("home.currentProjects.kicker")}
-            </p>
-            <h2 className="text-balance font-serif text-3xl text-ink-900 sm:text-4xl">
-              {t("home.currentProjects.title")}
-            </h2>
-            <p className="mt-5 text-balance text-lg leading-relaxed text-ink-500">
-              {t("home.currentProjects.body")}
-            </p>
-            <a
-              href="https://thelemonproject.co.za/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-teal-700 hover:text-teal-800"
-            >
-              {t("home.currentProjects.cta")}
-              <span aria-hidden className="rtl:rotate-180">
-                &rarr;
-              </span>
-            </a>
-          </MotionReveal>
-          <MotionReveal delay={0.1}>
-            <a
-              href="https://thelemonproject.co.za/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative block aspect-[16/10] overflow-hidden rounded-3xl shadow-sm"
-            >
-              <Image
-                src={assetPath("/images/projects/lemon-project.jpg")}
-                alt={t("home.currentProjects.imageAlt")}
-                fill
-                sizes="(min-width: 1024px) 40vw, 90vw"
-                className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink-900/50 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-            </a>
           </MotionReveal>
         </Container>
       </section>
