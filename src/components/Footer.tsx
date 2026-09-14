@@ -22,7 +22,7 @@ export function Footer() {
                 <Image
                   src={assetPath("/images/brand/logo-mark.png")}
                   alt=""
-                  width={44}
+                  width={32}
                   height={44}
                   className="h-full w-auto"
                 />

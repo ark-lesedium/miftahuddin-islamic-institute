@@ -70,7 +70,7 @@ export default async function HomePage({
               <Image
                 src={assetPath("/images/brand/logo-mark.png")}
                 alt=""
-                width={120}
+                width={87}
                 height={120}
                 priority
                 className="h-full w-auto"
