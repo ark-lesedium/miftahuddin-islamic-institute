@@ -20,7 +20,8 @@ export type GalleryImageId =
   | "ritchie-exterior"
   | "haji-adams-centre-facade"
   | "haji-adams-centre-museum"
-  | "haji-adams-centre-signage";
+  | "haji-adams-centre-signage"
+  | "roodepan-street";
 
 export const GALLERY_IMAGES: Record<
   GalleryImageId,
@@ -146,16 +147,19 @@ export const GALLERY_IMAGES: Record<
     height: 1351,
     span: "normal",
   },
+  "roodepan-street": {
+    src: assetPath("/images/gallery/roodepan-street.jpg"),
+    width: 680,
+    height: 510,
+    span: "normal",
+  },
 };
 
 // Curated set used for the homepage hero slideshow.
 export const HERO_IMAGE_IDS: GalleryImageId[] = [
+  "haji-adams-centre-facade",
+  "roodepan-street",
   "cbd-masjid-interior",
-  "roodepan-palms",
-  "mustafa-interior",
-  "galeshewe-minaret",
-  "hamza-exterior",
-  "cbd-masjid-facade",
 ];
 
 export const GALLERY_ORDER: GalleryImageId[] = [
@@ -179,4 +183,5 @@ export const GALLERY_ORDER: GalleryImageId[] = [
   "haji-adams-centre-facade",
   "haji-adams-centre-museum",
   "haji-adams-centre-signage",
+  "roodepan-street",
 ];

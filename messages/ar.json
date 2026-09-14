@@ -529,7 +529,8 @@
       { "id": "ritchie-exterior", "title": "مصلى معاذ بن جبل", "location": "ريتشي، الكاب الشمالي" },
       { "id": "haji-adams-centre-facade", "title": "مركز الحاج عبد السلام آدمز الإسلامي", "location": "كيمبرلي، الكاب الشمالي" },
       { "id": "haji-adams-centre-museum", "title": "متحف دار العجائب الإسلامي", "location": "كيمبرلي، الكاب الشمالي" },
-      { "id": "haji-adams-centre-signage", "title": "مدرسة تحفيظ، دروس الكبار وتخفيف حدة الفقر", "location": "كيمبرلي، الكاب الشمالي" }
+      { "id": "haji-adams-centre-signage", "title": "مدرسة تحفيظ، دروس الكبار وتخفيف حدة الفقر", "location": "كيمبرلي، الكاب الشمالي" },
+      { "id": "roodepan-street", "title": "مسجد رودبان من الشارع", "location": "رودبان، كيمبرلي" }
     ],
     "empty": {
       "title": "المزيد من الصور قريبًا",

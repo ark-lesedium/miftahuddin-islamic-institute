@@ -535,7 +535,8 @@
       { "id": "ritchie-exterior", "title": "Musallah Mu'az bin Jabal", "location": "Ritchie, Northern Cape" },
       { "id": "haji-adams-centre-facade", "title": "Haji Abdusalaam Adams Islamic Centre", "location": "Kimberley, Northern Cape" },
       { "id": "haji-adams-centre-museum", "title": "Darul 'Ajaaib Islamic Museum", "location": "Kimberley, Northern Cape" },
-      { "id": "haji-adams-centre-signage", "title": "Hifz Madrasah, Adult Classes & Poverty Alleviation", "location": "Kimberley, Northern Cape" }
+      { "id": "haji-adams-centre-signage", "title": "Hifz Madrasah, Adult Classes & Poverty Alleviation", "location": "Kimberley, Northern Cape" },
+      { "id": "roodepan-street", "title": "Roodepan Masjid from the Street", "location": "Roodepan, Kimberley" }
     ],
     "empty": {
       "title": "More Photographs Coming Soon",
