@@ -15,7 +15,7 @@ export function HeroSlideshow({
   const shouldReduceMotion = useReducedMotion();
 
   useEffect(() => {
-    if (shouldReduceMotion || images.length <= 1) return;
+    if (images.length <= 1) return;
     const id = setInterval(() => {
       setIndex((i) => (i + 1) % images.length);
     }, intervalMs);
