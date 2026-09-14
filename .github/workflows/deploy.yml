@@ -34,19 +34,9 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Derive base path
-        id: vars
-        run: |
-          REPO_NAME="${GITHUB_REPOSITORY#*/}"
-          if [[ "$REPO_NAME" == *.github.io ]]; then
-            echo "base_path=" >> "$GITHUB_OUTPUT"
-          else
-            echo "base_path=/$REPO_NAME" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Build static export
         env:
-          NEXT_PUBLIC_BASE_PATH: ${{ steps.vars.outputs.base_path }}
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
           NEXT_PUBLIC_SITE_URL: ${{ steps.pages.outputs.origin }}
         run: npm run build
 
