@@ -27,10 +27,10 @@ export function HeroSlideshow({
       <AnimatePresence>
         <motion.div
           key={images[index]}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: shouldReduceMotion ? 0.01 : 2.2, ease: "easeInOut" }}
+          initial={{ x: shouldReduceMotion ? 0 : "100%" }}
+          animate={{ x: 0 }}
+          exit={{ x: shouldReduceMotion ? 0 : "-100%" }}
+          transition={{ duration: shouldReduceMotion ? 0.01 : 1.1, ease: "easeInOut" }}
           className="absolute inset-0"
         >
           <Image
